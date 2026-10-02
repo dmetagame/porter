@@ -11,7 +11,9 @@ Active objective: Implementation and verification are complete. Checkpoint and p
 
 - Repository: https://github.com/dmetagame/porter (new, public)
 - Worktree: /home/rouma/porter
-- Branch: main; no initial commit yet
+- Branch: main
+- Implementation checkpoint: `6bc946c211564991623b7075bd401c7533dad8aa`, verified locally after all checks. This documentation-only handoff follows it; resolve the handoff ID with `git rev-parse HEAD`.
+- Publication: push this branch to origin/main and compare local HEAD, tracking ref and GitHub main before ending. No remote backup is claimed before that check succeeds; the final response provides the publication receipt.
 - Origin: https://github.com/dmetagame/porter.git; authenticated as dmetagame.
 - All existing repositories are protected and outside the write scope. No clone, fetch, fork, branch, commit, push, issue, PR, or artifact reuse there.
 
@@ -68,6 +70,7 @@ Active objective: Implementation and verification are complete. Checkpoint and p
 - Read this document first. No other repository is in scope.
 - Mainnet address and proof intentionally absent. README and evidence files state this; exact operator signatures are documented.
 - Source, new generated Porter artifact and UI/test evidence belong only to this repository. Build caches and temporary local test processes are disposable; preserve evidence screenshots and lockfile.
+- Task-owned production preview stopped. Reproducible dist/, out/, cache/ and test-results/ output removed after verification; source, generated Porter artifact, dependencies, lockfile and evidence preserved. Git status was clean before and after cleanup. Rebuild with npm run build before serving or rerunning browser tests.
 
 ## Change Log
 
