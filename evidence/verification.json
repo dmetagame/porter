@@ -1,0 +1,21 @@
+{
+  "project": "Porter",
+  "checkedAt": "2026-10-02T23:48:00Z",
+  "contractTests": { "passed": 16, "fuzzRuns": 256 },
+  "frontendValueTests": { "passed": 4 },
+  "productionBuild": "passed",
+  "browserTests": {
+    "passed": 2,
+    "widths": [1440, 390, 320],
+    "pageErrors": 0,
+    "mobileOverflow": false
+  },
+  "walletFlowEvidence": "Isolated local EVM only. Prominently labeled fixture, unlocked local accounts, intercepted local RPC; not Arc mainnet proof.",
+  "runtimeFonts": "self-hosted",
+  "productionDependencyVulnerabilities": 0,
+  "mainnetTransactionsSent": 0,
+  "mainnetProof": "not-established",
+  "submissionSent": false,
+  "existingRepositoryDefaultBranchesCompared": 43,
+  "existingRepositoryDefaultBranchesChanged": 0
+}

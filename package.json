@@ -1,0 +1,35 @@
+{
+  "name": "porter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "generate": "node scripts/generate-artifact.mjs",
+    "build": "npm run generate && tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:contract": "forge test -vv",
+    "test": "vitest run",
+    "test:browser": "playwright test",
+    "pin": "node scripts/pin-deployment.mjs",
+    "evidence": "node scripts/collect-evidence.mjs"
+  },
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "viem": "^2.57.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "prettier": "^3.9.9",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  }
+}
