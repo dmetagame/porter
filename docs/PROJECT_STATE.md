@@ -5,7 +5,7 @@
 
 Last updated: 2026-10-03
 Status: VERIFIED_UNSIGNED_APP_HOSTING
-Active objective: Publish the existing unsigned production app to its own Vercel project, verify a public HTTPS load, document the operator URL, push only Porter main, then stop. No contract deployment or wallet signature is authorized.
+Active objective: Completed unsigned production hosting and public verification. Stop after the publication-receipt handoff is pushed only to Porter main. No contract deployment or wallet signature is authorized.
 
 ## Workspace
 
@@ -14,6 +14,7 @@ Active objective: Publish the existing unsigned production app to its own Vercel
 - Branch: main
 - Implementation checkpoint: `6bc946c211564991623b7075bd401c7533dad8aa`, verified locally after all checks. This documentation-only handoff follows it; resolve the handoff ID with `git rev-parse HEAD`.
 - Starting publication verified: local main, origin/main and GitHub public main all resolve to `139cb3ae030df793248fabfac8376e4ec96a07cf`; worktree was clean. Compare the final documentation checkpoint with GitHub main before ending.
+- Hosting checkpoint: `522111286e42e468b4fdc8522443ed62a9131897` pushed successfully to origin/main; independently verified through git ls-remote. Tracked worktree clean after push. This publication-receipt-only handoff follows that checkpoint; resolve its ID with git rev-parse HEAD and compare origin/main before ending.
 - Origin: https://github.com/dmetagame/porter.git; authenticated as dmetagame.
 - All existing repositories are protected and outside the write scope. No clone, fetch, fork, branch, commit, push, issue, PR, or artifact reuse there.
 
@@ -61,6 +62,7 @@ Active objective: Publish the existing unsigned production app to its own Vercel
 - Foundry reports intentional timestamp-boundary lint warnings; Vite reports a 539.86-kB JS chunk warning. Neither is a failing check. No claimed audit, gas profitability, independent usage or real Arc settlement.
 - Hosting verification 2026-10-03: npm run build and vercel build --prod pass; generated artifact unchanged. Prebuilt production deployment READY. Public curl returns HTTPS 200. Fresh Playwright contexts at 1440px and 390px show unpinned contract, absent mainnet proof, disabled approval and zero Arc transaction links; no injected wallet, page errors or horizontal overflow. No wallet interaction occurred.
 - Boundary comparison passed: 43 other GitHub default branches and 51 existing local repository configurations unchanged. Porter origin remains its sole fetch/push remote. Only README.md, docs/PROJECT_STATE.md, vercel.json and evidence/hosting.json belong to this hosting checkpoint.
+- Post-push verification: Vercel Git integration built production https://porter-ps96piic7-dmetagames-projects.vercel.app successfully (Ready, 19s). At 2026-10-03T13:33Z the stable public operator URL again returned HTTPS 200 in a fresh browser, with no pinned address, no mainnet proof and no Arc transaction links. Final read-only boundary comparison still shows all 43 other remote default branches and 51 local repository configurations unchanged.
 
 ## Risks And Blockers
 
@@ -70,14 +72,14 @@ Active objective: Publish the existing unsigned production app to its own Vercel
 
 1. Operator follows docs/OPERATOR.md using a funded browser wallet: sign deployment, independently verify/pin, rebuild, approve exact funding, open, estimate, then settle.
 2. Only after confirmed opening and settlement, collect real evidence and create the blurb. Unsigned state does not qualify for the grant.
-3. Hosting is complete; checkpoint only the README, hosting configuration/evidence and this handoff. Verify Porter main and existing repository boundaries, then stop. No contract deployment, wallet signatures or DoraHacks submission is authorized in this hosting session.
+3. Hosting is complete and its checkpoint is backed up on Porter main. Push this publication-receipt-only handoff, verify the final main commit, then stop. No contract deployment, wallet signatures or DoraHacks submission is authorized in this hosting session.
 
 ## Session Handoff
 
 - Read this document first. No other repository is in scope.
 - Mainnet address and proof intentionally absent. README and evidence files state this; exact operator signatures are documented.
 - Source, new generated Porter artifact and UI/test evidence belong only to this repository. Build caches and temporary local test processes are disposable; preserve evidence screenshots and lockfile.
-- The prior implementation delivery stopped its preview and removed reproducible build output. Hosting rebuilt it; clean task-created outputs after upload. Preserve source, generated Porter artifact, dependencies, lockfile, hosting link settings and evidence. Rebuild with npm run build before serving or rerunning browser tests.
+- After verified hosting, removed task-created reproducible dist/, out/, cache/, .vercel/output/ and the ignored .vercel/.env.production.local file. Preserved source, generated Porter artifact, dependencies, lockfile, hosting link settings and evidence. Tracked worktree was clean before cleanup; verify again after this documentation-only receipt. Rebuild with npm run build before serving or rerunning browser tests.
 - Hosting handoff: public operator app https://porter-gilt.vercel.app. The operator, not Codex, follows docs/OPERATOR.md. .vercel/ is ignored; never commit its environment files or authentication material. Mainnet pin and proof remain empty and unchanged.
 
 ## Change Log
@@ -88,3 +90,4 @@ Active objective: Publish the existing unsigned production app to its own Vercel
 | 2026-10-03                           | Codex         | Core implementation verified | 16 Foundry and 4 value tests pass; production build passes; unsigned operator path and evidence gates implemented       |
 | 2026-10-02T23:48Z (2026-10-03 Lagos) | Codex         | Final verification           | 16 contract + 4 values + 2 production-browser checks pass; no real proof or key; 43 existing default branches unchanged |
 | 2026-10-03T11:45Z | Codex | Unsigned app hosted | Separate Porter Vercel project; HTTPS 200; fresh desktop/mobile prove unpinned/no mainnet proof; only hosting configuration and documentation/evidence changed |
+| 2026-10-03T13:33Z | Codex | Publication receipt verified | Hosting commit 5221112 pushed and verified on GitHub main; automatic Vercel production build Ready; public fresh load still unsigned; 43 other repository heads and 51 local configurations unchanged; disposable build/env output cleaned |
