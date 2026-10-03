@@ -1,0 +1,40 @@
+{
+  "project": "Porter",
+  "kind": "unsigned-app-hosting-check",
+  "url": "https://porter-gilt.vercel.app",
+  "checkedAt": "2026-10-03T11:45:01.651Z",
+  "startingCommit": "139cb3ae030df793248fabfac8376e4ec96a07cf",
+  "vercelProject": "dmetagames-projects/porter",
+  "deploymentId": "dpl_4wS2xjXd7PaGFNZ6MwXragsvtC79",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": 200,
+      "title": "Porter · Scheduled USDC payments",
+      "unpinned": true,
+      "mainnetProof": "not-established",
+      "transactionLinks": 0,
+      "walletInjected": false,
+      "pageErrors": [],
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "title": "Porter · Scheduled USDC payments",
+      "unpinned": true,
+      "mainnetProof": "not-established",
+      "transactionLinks": 0,
+      "walletInjected": false,
+      "pageErrors": [],
+      "horizontalOverflow": false
+    }
+  ],
+  "note": "Public app hosting only. No contract deployed, wallet connected, signature requested, or mainnet transaction sent."
+}

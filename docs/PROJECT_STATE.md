@@ -4,8 +4,8 @@
 > secrets or raw credential-bearing values here.
 
 Last updated: 2026-10-03
-Status: VERIFIED_UNSIGNED_DELIVERY
-Active objective: Implementation and verification are complete. Checkpoint and push only the new Porter repository, verify publication, then stop.
+Status: VERIFIED_UNSIGNED_APP_HOSTING
+Active objective: Publish the existing unsigned production app to its own Vercel project, verify a public HTTPS load, document the operator URL, push only Porter main, then stop. No contract deployment or wallet signature is authorized.
 
 ## Workspace
 
@@ -13,7 +13,7 @@ Active objective: Implementation and verification are complete. Checkpoint and p
 - Worktree: /home/rouma/porter
 - Branch: main
 - Implementation checkpoint: `6bc946c211564991623b7075bd401c7533dad8aa`, verified locally after all checks. This documentation-only handoff follows it; resolve the handoff ID with `git rev-parse HEAD`.
-- Publication: push this branch to origin/main and compare local HEAD, tracking ref and GitHub main before ending. No remote backup is claimed before that check succeeds; the final response provides the publication receipt.
+- Starting publication verified: local main, origin/main and GitHub public main all resolve to `139cb3ae030df793248fabfac8376e4ec96a07cf`; worktree was clean. Compare the final documentation checkpoint with GitHub main before ending.
 - Origin: https://github.com/dmetagame/porter.git; authenticated as dmetagame.
 - All existing repositories are protected and outside the write scope. No clone, fetch, fork, branch, commit, push, issue, PR, or artifact reuse there.
 
@@ -26,9 +26,12 @@ Active objective: Implementation and verification are complete. Checkpoint and p
 
 ## Current Context
 
+- Hosting session: cached Vercel CLI 51.2.1 is already authenticated as dmetagame in dmetagames-projects. Porter did not exist at session start; it is now a separate new hosting project linked only to this repository.
+- Existing repository default heads and 51 local repository configuration hashes recorded outside repositories for the final boundary comparison. No existing repository was modified or fetched.
+- Deploy only local production assets. Keep deployment.json and mainnet-proof.json unchanged; pinned address remains null, proof status not-established, claims empty, no hackathon blurb. The operator performs docs/OPERATOR.md later.
 - One-shot rooms with exact funding, two atomic transfers, and early/repeat/wrong-amount rejection.
-- Process-environment key checks: PORTER_DEPLOYER_PRIVATE_KEY, ARC_MAINNET_PRIVATE_KEY and DEPLOYER_PRIVATE_KEY are absent. No existing repository environment files were read.
-- Automatic deployment unavailable. Deliver unsigned browser deployment/open/settle and operator instructions. No pinned address or mainnet proof exists yet.
+- Previous implementation-session environment checks found no deployment key. This hosting session did not inspect or use signing credentials; no existing repository environment files were read.
+- Contract deployment is outside this session's authorization. The existing browser operator deployment/open/settle path remains unsigned. No pinned address or mainnet proof exists yet.
 
 ## Work Completed
 
@@ -37,6 +40,8 @@ Active objective: Implementation and verification are complete. Checkpoint and p
 - Independently implemented contracts/Porter.sol: exact funding, immutable room terms, one-shot atomic payout/bounty, early/repeat/wrong-amount guards, received-balance validation, no native sweep/admin/refund.
 - Built browser-only Arc wallet app with runtime/token verification, exact approval, room opening, per-caller gas estimation with a disclosed 20% gas-limit buffer, settlement, storage-independent receipt handling, pending/revert recovery and operator deployment. Self-hosted product typography; desktop/mobile production verification complete.
 - Added read-only pin and proof collectors; claims and hashes remain empty until successful matching real Arc receipts exist. No blurb file exists yet.
+- Published https://porter-gilt.vercel.app from the existing production app to a new, separate dmetagames-projects/porter Vercel project. Initial hosting deployment: dpl_4wS2xjXd7PaGFNZ6MwXragsvtC79. Existing authenticated account dmetagame; Git integration connects only dmetagame/porter.
+- Added vercel.json for a TypeScript/Vite-only hosting build using the committed contract artifact; npm run build still compiles it locally. No contract/app source or mainnet evidence changed. README documents the operator URL and absent mainnet proof; evidence/hosting.json records public checks.
 
 ## Verification
 
@@ -54,23 +59,26 @@ Active objective: Implementation and verification are complete. Checkpoint and p
 - Browser screenshots inspected in evidence/browser/. Local-EVM screenshot has a prominent fixture label; it is not mainnet proof. No page errors or mobile horizontal overflow.
 - Initial local browser fixture failed because its token double lacked decimals(); fixed the local double, then the complete final suite passed. Product verification correctly refused the unrecognized token interface.
 - Foundry reports intentional timestamp-boundary lint warnings; Vite reports a 539.86-kB JS chunk warning. Neither is a failing check. No claimed audit, gas profitability, independent usage or real Arc settlement.
+- Hosting verification 2026-10-03: npm run build and vercel build --prod pass; generated artifact unchanged. Prebuilt production deployment READY. Public curl returns HTTPS 200. Fresh Playwright contexts at 1440px and 390px show unpinned contract, absent mainnet proof, disabled approval and zero Arc transaction links; no injected wallet, page errors or horizontal overflow. No wallet interaction occurred.
+- Boundary comparison passed: 43 other GitHub default branches and 51 existing local repository configurations unchanged. Porter origin remains its sole fetch/push remote. Only README.md, docs/PROJECT_STATE.md, vercel.json and evidence/hosting.json belong to this hosting checkpoint.
 
 ## Risks And Blockers
 
-- No available environment key. Operator must sign deployment, approval, opening and settlement; mainnet qualification remains incomplete.
+- Operator must sign deployment, approval, opening and settlement in a later operator session; mainnet qualification remains incomplete. Hosting itself is complete.
 
 ## Next Actions
 
 1. Operator follows docs/OPERATOR.md using a funded browser wallet: sign deployment, independently verify/pin, rebuild, approve exact funding, open, estimate, then settle.
 2. Only after confirmed opening and settlement, collect real evidence and create the blurb. Unsigned state does not qualify for the grant.
-3. No further product work or DoraHacks submission is authorized in this session. Publication handoff must verify origin/main and GitHub main, then stop.
+3. Hosting is complete; checkpoint only the README, hosting configuration/evidence and this handoff. Verify Porter main and existing repository boundaries, then stop. No contract deployment, wallet signatures or DoraHacks submission is authorized in this hosting session.
 
 ## Session Handoff
 
 - Read this document first. No other repository is in scope.
 - Mainnet address and proof intentionally absent. README and evidence files state this; exact operator signatures are documented.
 - Source, new generated Porter artifact and UI/test evidence belong only to this repository. Build caches and temporary local test processes are disposable; preserve evidence screenshots and lockfile.
-- Task-owned production preview stopped. Reproducible dist/, out/, cache/ and test-results/ output removed after verification; source, generated Porter artifact, dependencies, lockfile and evidence preserved. Git status was clean before and after cleanup. Rebuild with npm run build before serving or rerunning browser tests.
+- The prior implementation delivery stopped its preview and removed reproducible build output. Hosting rebuilt it; clean task-created outputs after upload. Preserve source, generated Porter artifact, dependencies, lockfile, hosting link settings and evidence. Rebuild with npm run build before serving or rerunning browser tests.
+- Hosting handoff: public operator app https://porter-gilt.vercel.app. The operator, not Codex, follows docs/OPERATOR.md. .vercel/ is ignored; never commit its environment files or authentication material. Mainnet pin and proof remain empty and unchanged.
 
 ## Change Log
 
@@ -79,3 +87,4 @@ Active objective: Implementation and verification are complete. Checkpoint and p
 | 2026-10-03                           | Codex         | New project created          | GitHub name available; new public Porter; no environment key; mainnet proof absent                                      |
 | 2026-10-03                           | Codex         | Core implementation verified | 16 Foundry and 4 value tests pass; production build passes; unsigned operator path and evidence gates implemented       |
 | 2026-10-02T23:48Z (2026-10-03 Lagos) | Codex         | Final verification           | 16 contract + 4 values + 2 production-browser checks pass; no real proof or key; 43 existing default branches unchanged |
+| 2026-10-03T11:45Z | Codex | Unsigned app hosted | Separate Porter Vercel project; HTTPS 200; fresh desktop/mobile prove unpinned/no mainnet proof; only hosting configuration and documentation/evidence changed |

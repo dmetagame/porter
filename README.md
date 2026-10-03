@@ -2,6 +2,8 @@
 
 Porter is an early payment prototype on Arc: a sender locks a scheduled USDC payout plus a caller bounty in one room. Once due, any wallet may settle once. The payee receives the payout and the caller receives the bounty in the same transaction.
 
+Operator app: **[https://porter-gilt.vercel.app](https://porter-gilt.vercel.app)**. **Mainnet proof does not exist yet.** This unsigned page is published only so the operator can follow [docs/OPERATOR.md](docs/OPERATOR.md) from a browser. Hosting does not deploy the contract or establish payment evidence.
+
 Arc makes payout, bounty and gas all USDC. A caller can compare the bounty with a USDC fee estimate without acquiring a second gas token. The bounty is received after execution; callers still need real USDC for gas up front. There is no mainnet faucet.
 
 Porter is not a keeper network, a promise that bounty exceeds gas, or evidence of anyone besides the builder using it. No automatic execution is promised. Rooms are one-shot; there is no cancel/refund/admin/sweep path. Use small amounts and confirm the payee carefully.
@@ -29,6 +31,8 @@ npm run dev
 ```
 
 `npm run build` compiles this project's `contracts/Porter.sol`, generates its own ABI/bytecode artifact, typechecks the app and builds production assets in `dist/`. `npm run preview` serves that production output. No other project artifacts are used. `npm run test:browser` checks desktop/mobile states and an explicitly isolated local-EVM wallet workflow; see [verification](docs/VERIFICATION.md).
+
+The separate Vercel project is `dmetagames-projects/porter`. Its [hosting configuration](vercel.json) typechecks and builds the app using the committed Porter artifact, without requiring Foundry on the hosting machine. Re-run `npm run build` locally when changing the contract, then commit the generated artifact. The initial publication used a local production build and `vercel deploy --prebuilt --prod`; public browser checks are recorded in [evidence/hosting.json](evidence/hosting.json), separate from mainnet payment evidence.
 
 ## Wallet path
 

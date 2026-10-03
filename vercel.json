@@ -1,0 +1,5 @@
+{
+  "framework": "vite",
+  "buildCommand": "npx tsc --noEmit && npx vite build",
+  "outputDirectory": "dist"
+}
