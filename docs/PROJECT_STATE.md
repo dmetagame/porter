@@ -3,12 +3,12 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-04
-Status: DEMO_VIDEO_VERIFIED_PUBLICATION_PENDING
-Active objective: Produce a narrated, captioned Porter demo video and editable sources using the saved MystiqueMide walkthrough style. Preserve app, wallet, contract, deployment and proof; do not read .env or any other project. The prior DoraHacks submission task is pending; no submission URL has been recorded or submission attempted in this video task.
+Status: DEMO_VIDEO_DELIVERED
+Active objective: Completed the narrated, captioned Porter demo using the approved saved MystiqueMide walkthrough style; verified public video and supporting downloads. App, wallet, contract, deployment and proof are unchanged; .env and other projects were not read. The prior DoraHacks submission task is pending; no submission URL has been recorded or submission attempted in this video task.
 
 ## Workspace
 
-- Current video session: /home/rouma/porter, main; public source checkpoint 531e2dd0eff1f7ca5a76d559d0246ead9e853e54 verified against origin/main. Baseline d2a896cfa67327b0435726cd1980501692889fe7; only demo-video/ and this handoff changed. Earlier audit/redesign/deployment sections are historical, not current authorization.
+- Current video session: /home/rouma/porter, main; public video checkpoint 31ec333d30f0463290be6a7c3dd66dfb6a025ce9 verified against origin/main. Baseline d2a896cfa67327b0435726cd1980501692889fe7; only demo-video/ and this handoff changed. Earlier audit/redesign/deployment sections are historical, not current authorization.
 
 - Audit baseline reconciled: local and public main d78a1e551e9249d39f5269d43e478f861bf17c8a; clean worktree, sole origin dmetagame/porter, GitHub authenticated as dmetagame. Previous receipt-push instruction was stale: that receipt is already public.
 
@@ -75,7 +75,7 @@ Active objective: Produce a narrated, captioned Porter demo video and editable s
 
 ## Session Handoff
 
-- Current demo handoff supersedes the old presentation scope below: editable sources, actual read-only captures, narration, captions, thumbnail, final MP4 and verification live in demo-video/. Never read .env or any other repo; no signing, app changes or manual Vercel deployment. Media and browser verification passed; next publish the video-only checkpoint, verify the public download hash, then record delivery and stop. DoraHacks submission remains pending.
+- Current demo handoff supersedes the old presentation scope below: editable sources, actual read-only captures, narration, captions, thumbnail, final MP4 and verification live in demo-video/. Never read .env or any other repo; no signing, app changes or manual Vercel deployment. Media/browser/public-download verification passed. Final action: push this delivery-receipt-only checkpoint, verify local/upstream/public main and stop. DoraHacks submission remains pending; this video task did not submit the project.
 
 - Read this file first. The mainnet proof section above is historical confirmed evidence, not permission to repeat signing. Current work is presentation only.
 - Current allowed frontend/design/test files are src/main.tsx, src/styles.css, docs/DESIGN.md, browser-tests/porter.spec.ts, this handoff and redesign verification/screenshots. OPERATOR.md and HACKATHON_BLURB.md are preserved exactly.
@@ -142,3 +142,12 @@ Active objective: Produce a narrated, captioned Porter demo video and editable s
 - 2026-10-04T18:16:04.193198Z full Remotion render completed (2980 frames, ~7.7 MB). Encoded-format verification caught yuvj420p full-range output despite the CLI pixel-format request; normalize.py/render.py now make a limited-range BT.709 yuv420p deliverable, copying AAC audio unchanged. No composition/proof figure is adjusted to pass a check. Seven actual encoded frames were extracted for inspection; final normalized decode/verification remains pending.
 
 - 2026-10-04T18:42:25Z final media verified: npm run verify passed full decoding, 2980 frames/30 fps/1920x1080 H.264 yuv420p/AAC, 28 caption bounds, all eight unclipped narration tracks and protected-file comparisons. Encoded chapter endings, exact split/gas, same-wallet disclosure and final links visually inspected. npm run typecheck passed. Chromium playback and seeking to the final second passed with no media error. Initial seek harness used a Python server without byte ranges; scripts/serve.mjs provides required byte-range responses, and the final MP4 is unchanged by that harness correction. Final MP4 is 7,363,841 bytes, SHA-256 f6bb984b26f3a4234f6d9010828bfde5f3488f475560e6fbf54a58d4ba324cf0. Publishing and public-download comparison remain. Sole remote Porter and existing GitHub authentication rechecked; .env remains ignored/unread. No app, wallet, contract, proof, operator-runbook or hackathon-blurb changes.
+
+## Demo delivery handoff — 2026-10-04T19:20:52Z
+
+- Published video checkpoint: 31ec333d30f0463290be6a7c3dd66dfb6a025ce9, pushed only to Porter main and independently verified by git ls-remote. Worktree /home/rouma/porter, branch main; source/assets checkpoint 531e2dd is also public. Resolve this final receipt commit with git rev-parse HEAD and verify against origin/main before ending; no self-referential follow-up commit is needed.
+- Download: https://raw.githubusercontent.com/dmetagame/porter/main/demo-video/output/porter-demo.mp4. MP4, thumbnail, SRT and transcript each returned HTTPS 200; downloaded size and SHA-256 matched all four local deliverables. demo-video/output/verification.json records encoded format/full decode/audio/caption checks, actual frame inspection, browser playback/seek and public-download checks.
+- Delivered: 99.33-second 1080p/30 H.264/AAC narrated video, 28 burned-in and separate captions, thumbnail, transcript, editable eight-scene Remotion sources, fonts/licenses, real captures/provenance and synthetic voice/word timings. README contains reproduction commands and all proof/source links. The saved style was user-approved; no original reference footage or creator voice is claimed.
+- Protected app, wallet, contracts, evidence, pinned address, receipt hashes, root dependencies/runbook and four-sentence blurb remain byte-identical to d2a896c. No new transaction, app change, manual Vercel deployment, other repo access or DoraHacks submission. Same builder sender/payee/caller and exact 0.10/0.01 payout/bounty and 0.00171944 gas are preserved.
+- Cleanup: stopped task media servers and removed only generated check/decoded frames, contact sheet, intermediate full-range MP4 and downloaded verification copies. Preserved the final MP4, thumbnail, subtitles, transcript, all editable sources/assets/lockfiles/dependencies, historical evidence, Vercel link and unread .env.
+- Next: user reviews the delivered video. No implementation or submission step remains authorized by this video request.
