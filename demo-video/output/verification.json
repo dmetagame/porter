@@ -1,0 +1,136 @@
+{
+  "verifiedAt": "2026-10-04T18:20:25.238689Z",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 2980,
+    "durationSeconds": 99.349,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "audioCodec": "aac",
+    "sampleRate": "48000",
+    "fullDecode": "passed"
+  },
+  "captionCount": 28,
+  "captionAndSceneBounds": "passed",
+  "sceneAudio": [
+    {
+      "scene": "intro",
+      "durationSeconds": 8.472,
+      "startSeconds": 0.4,
+      "endsBeforeCut": true,
+      "peakDb": -2.653775,
+      "rmsDb": -20.456177
+    },
+    {
+      "scene": "fund",
+      "durationSeconds": 11.976,
+      "startSeconds": 10.3,
+      "endsBeforeCut": true,
+      "peakDb": -2.543742,
+      "rmsDb": -21.28145
+    },
+    {
+      "scene": "due",
+      "durationSeconds": 10.968,
+      "startSeconds": 23.5,
+      "endsBeforeCut": true,
+      "peakDb": -2.861274,
+      "rmsDb": -20.706614
+    },
+    {
+      "scene": "split",
+      "durationSeconds": 9.408,
+      "startSeconds": 35.699999999999996,
+      "endsBeforeCut": true,
+      "peakDb": -3.460166,
+      "rmsDb": -20.38346
+    },
+    {
+      "scene": "receipts",
+      "durationSeconds": 10.032,
+      "startSeconds": 46.33333333333333,
+      "endsBeforeCut": true,
+      "peakDb": -3.450999,
+      "rmsDb": -20.495145
+    },
+    {
+      "scene": "gas",
+      "durationSeconds": 13.488,
+      "startSeconds": 57.56666666666666,
+      "endsBeforeCut": true,
+      "peakDb": -1.93036,
+      "rmsDb": -20.19073
+    },
+    {
+      "scene": "disclosure",
+      "durationSeconds": 12.888,
+      "startSeconds": 72.26666666666667,
+      "endsBeforeCut": true,
+      "peakDb": -3.069456,
+      "rmsDb": -20.728934
+    },
+    {
+      "scene": "close",
+      "durationSeconds": 10.44,
+      "startSeconds": 86.36666666666667,
+      "endsBeforeCut": true,
+      "peakDb": -2.016656,
+      "rmsDb": -20.62555
+    }
+  ],
+  "protectedFilesByteIdenticalTo": "d2a896cfa67327b0435726cd1980501692889fe7",
+  "outputs": {
+    "output/porter-demo.mp4": {
+      "bytes": 7363841,
+      "sha256": "f6bb984b26f3a4234f6d9010828bfde5f3488f475560e6fbf54a58d4ba324cf0"
+    },
+    "output/thumbnail.png": {
+      "bytes": 147433,
+      "sha256": "a4797275112df70437c79cea9855238aa4c039b1b72f6af32a023b232bb1e33d"
+    },
+    "output/porter-demo.srt": {
+      "bytes": 2106,
+      "sha256": "a20a7825f5a4d5cbf0eb6e150190fbe1e450ffbd879662fa2b41388f99250083"
+    },
+    "output/TRANSCRIPT.md": {
+      "bytes": 1959,
+      "sha256": "24bc645470e577536a0af22a99e3ee2b5e9f90258b7d975cff8bfad18de18e5b"
+    }
+  },
+  "claims": "Existing builder-controlled room only; same sender/payee/caller, no independent use or profit claim.",
+  "envRead": false,
+  "walletSigned": false,
+  "contractDeployed": false,
+  "browserPlayback": {
+    "checkedAt": "2026-10-04T18:42:25.192Z",
+    "width": 1920,
+    "height": 1080,
+    "duration": 99.349,
+    "ended": true,
+    "currentTime": 99.349,
+    "error": null,
+    "initialPlayback": "passed",
+    "seekToFinalSecond": "passed"
+  },
+  "encodedFrameInspection": {
+    "frames": [
+      90,
+      296,
+      600,
+      692,
+      1058,
+      1140,
+      1377,
+      1510,
+      1714,
+      1950,
+      2155,
+      2390,
+      2578,
+      2979
+    ],
+    "result": "Passed: real proof figures, captions, scene endings, disclosure and closing links inspected from the encoded MP4."
+  }
+}

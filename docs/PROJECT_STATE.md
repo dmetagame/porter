@@ -3,10 +3,12 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-04
-Status: DEMO_VIDEO_IN_PROGRESS
+Status: DEMO_VIDEO_VERIFIED_PUBLICATION_PENDING
 Active objective: Produce a narrated, captioned Porter demo video and editable sources using the saved MystiqueMide walkthrough style. Preserve app, wallet, contract, deployment and proof; do not read .env or any other project. The prior DoraHacks submission task is pending; no submission URL has been recorded or submission attempted in this video task.
 
 ## Workspace
+
+- Current video session: /home/rouma/porter, main; public source checkpoint 531e2dd0eff1f7ca5a76d559d0246ead9e853e54 verified against origin/main. Baseline d2a896cfa67327b0435726cd1980501692889fe7; only demo-video/ and this handoff changed. Earlier audit/redesign/deployment sections are historical, not current authorization.
 
 - Audit baseline reconciled: local and public main d78a1e551e9249d39f5269d43e478f861bf17c8a; clean worktree, sole origin dmetagame/porter, GitHub authenticated as dmetagame. Previous receipt-push instruction was stale: that receipt is already public.
 
@@ -73,6 +75,8 @@ Active objective: Produce a narrated, captioned Porter demo video and editable s
 
 ## Session Handoff
 
+- Current demo handoff supersedes the old presentation scope below: editable sources, actual read-only captures, narration, captions, thumbnail, final MP4 and verification live in demo-video/. Never read .env or any other repo; no signing, app changes or manual Vercel deployment. Media and browser verification passed; next publish the video-only checkpoint, verify the public download hash, then record delivery and stop. DoraHacks submission remains pending.
+
 - Read this file first. The mainnet proof section above is historical confirmed evidence, not permission to repeat signing. Current work is presentation only.
 - Current allowed frontend/design/test files are src/main.tsx, src/styles.css, docs/DESIGN.md, browser-tests/porter.spec.ts, this handoff and redesign verification/screenshots. OPERATOR.md and HACKATHON_BLURB.md are preserved exactly.
 - Build/preview with a bwrap namespace masking /home/rouma/porter/.env using /dev/null. Do not run the old mainnet signing script. The mask never reads or modifies the actual file.
@@ -130,3 +134,11 @@ Active objective: Produce a narrated, captioned Porter demo video and editable s
 - Demo production checkpoint: isolated Remotion 4.0.532 project scaffolded, actual live app/form/settled-room/receipt and both public Arc explorer pages captured without a wallet, signing or RPC fixtures. Eight narrated scenes generated using key-free synthetic voice; word-boundary timings produce 26 caption cues across 2980 frames (99.333 seconds at 30 fps). Editable composition typecheck passed. Render/encoded-frame/audio/download verification remains.
 
 - 2026-10-04T18:00:11.892678Z demo source checkpoint ready: eight separate Remotion scenes, actual-capture manifest, synthetic narration and exact word timings, 28 punctuated subtitles, transcript/links, thumbnail and reproduction/verification scripts. Preview frames inspected for form crop, proof figures, explorer evidence, disclosure and closing links; typecheck passed. Removed unused scaffold ESLint toolchain with reproduced dependency advisories; isolated install now reports zero vulnerabilities. Full 2980-frame H.264/AAC render is running; encode/decode/public-download checks pending. Stage only complete source/assets/docs at this checkpoint, not an unfinished MP4.
+
+- 2026-10-04T18:03:46.911709Z source checkpoint 531e2dd created with only completed demo-video assets/sources and state. Full-render output is not staged until encoding and decoding pass; the final delivery is still in progress. Latest source typecheck passed after formatting, and all app/proof/root-dependency diffs remain empty.
+
+- 2026-10-04T18:07:26.672164Z source push independently verified at 531e2dd0eff1f7ca5a76d559d0246ead9e853e54. Final hold frame inspected: product/source URLs and full pinned contract are readable; no clipped closing content. All eight narration MP3s decode and have audible peaks between -3.47 and -1.93 dB, without clipping. App/proof/runbook/README/root package/hosting diffs against d2a896c remain empty. Full render is near completion; MP4 itself still requires encoded-output checks.
+
+- 2026-10-04T18:16:04.193198Z full Remotion render completed (2980 frames, ~7.7 MB). Encoded-format verification caught yuvj420p full-range output despite the CLI pixel-format request; normalize.py/render.py now make a limited-range BT.709 yuv420p deliverable, copying AAC audio unchanged. No composition/proof figure is adjusted to pass a check. Seven actual encoded frames were extracted for inspection; final normalized decode/verification remains pending.
+
+- 2026-10-04T18:42:25Z final media verified: npm run verify passed full decoding, 2980 frames/30 fps/1920x1080 H.264 yuv420p/AAC, 28 caption bounds, all eight unclipped narration tracks and protected-file comparisons. Encoded chapter endings, exact split/gas, same-wallet disclosure and final links visually inspected. npm run typecheck passed. Chromium playback and seeking to the final second passed with no media error. Initial seek harness used a Python server without byte ranges; scripts/serve.mjs provides required byte-range responses, and the final MP4 is unchanged by that harness correction. Final MP4 is 7,363,841 bytes, SHA-256 f6bb984b26f3a4234f6d9010828bfde5f3488f475560e6fbf54a58d4ba324cf0. Publishing and public-download comparison remain. Sole remote Porter and existing GitHub authentication rechecked; .env remains ignored/unread. No app, wallet, contract, proof, operator-runbook or hackathon-blurb changes.

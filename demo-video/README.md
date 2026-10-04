@@ -4,7 +4,7 @@ A narrated walkthrough of the existing Porter app and its existing builder-contr
 
 ## Deliverables
 
-- [Download MP4](https://github.com/dmetagame/porter/raw/refs/heads/main/demo-video/output/porter-demo.mp4) — 1920×1080, 30 fps, H.264/AAC, 99.33 seconds.
+- [Download MP4](https://raw.githubusercontent.com/dmetagame/porter/main/demo-video/output/porter-demo.mp4) — 1920×1080, 30 fps, H.264/AAC, 99.33 seconds.
 - [Thumbnail](output/thumbnail.png).
 - [Subtitles](output/porter-demo.srt), also burned into the video.
 - [Transcript](output/TRANSCRIPT.md), including product, source and existing proof links.
@@ -41,9 +41,10 @@ The mask prevents accidental environment-file reads by tools and never reads or 
 - `scripts/narrate.py`: regenerates synthetic audio and exact word timings (`--force` to replace existing task-generated audio).
 - `scripts/timeline.py`: rebuilds scene/caption JSON, transcript and SRT from those timings; exact 30-fps starts, speech padding and readable numeric gas caption.
 - `src/scenes/`: separate editable scenes. `src/Root.tsx` exposes the video, thumbnail and scene compositions.
-- `npm run render -- --browser-executable=PATH`: produces the MP4.
+- `npm run render -- --browser-executable=PATH`: renders the composition, then normalizes JPEG/full-range output to limited-range H.264 yuv420p / BT.709 with AAC audio copied unchanged and MP4 fast-start metadata. It produces the final MP4.
 - `npm run thumbnail -- --browser-executable=PATH`: produces the thumbnail.
 - `npm run verify`: checks codecs, dimensions, duration/frame count, full decoding, caption/scene/audio bounds, and records hashes.
+- `scripts/playback.mjs`: checks the final MP4 in Chromium, including playback and seeking to the ending. Start `node scripts/serve.mjs` first; it serves only the MP4 at `http://127.0.0.1:8799` with byte-range support. Run the playback script after media verification. This checks the encoded file, not wallet behavior.
 
 After changing scene audio lengths, update the explicit scene duration values in `src/PorterDemo.tsx` and `src/Root.tsx` to match `src/timeline.json`; these remain visible/editable in Studio. Watch the result and inspect cut/end frames before replacing the delivered MP4. Do not change the app or proof to fit a demo.
 

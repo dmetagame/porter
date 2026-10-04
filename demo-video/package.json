@@ -33,9 +33,10 @@
     "typecheck": "tsc --noEmit",
     "capture": "node scripts/capture.mjs",
     "narrate": "python3 scripts/narrate.py",
-    "render": "remotion render PorterDemo output/porter-demo.mp4 --codec=h264 --audio-codec=aac --pixel-format=yuv420p --crf=20 --concurrency=4",
+    "render": "python3 scripts/render.py",
     "thumbnail": "remotion still PorterThumbnail output/thumbnail.png",
     "timeline": "python3 scripts/timeline.py",
-    "verify": "python3 scripts/verify.py"
+    "verify": "python3 scripts/verify.py",
+    "normalize": "python3 scripts/normalize.py"
   }
 }
