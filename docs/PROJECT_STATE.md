@@ -3,8 +3,8 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-04
-Status: AUDIT_VERIFIED_PENDING_PUSH
-Active objective: Audit verified. No P0; one P1 inaccurate verification-documentation finding fixed, no unresolved P0/P1. Commit and push the scoped audit report/docs/tests/snapshots to Porter main, verify the push, then stop. No app/contract/proof/design change or manual redeploy; never read .env or sign.
+Status: AUDIT_COMPLETE
+Active objective: Audit complete and audit checkpoint pushed/independently verified. No P0; one P1 verification-documentation finding fixed; no unresolved P0/P1. Publish this state receipt only, verify the current main ID and clean worktree, then stop. App/contract/proof/design unchanged; no manual redeploy, .env read or signing.
 
 ## Workspace
 
@@ -115,3 +115,5 @@ Active objective: Audit verified. No P0; one P1 inaccurate verification-document
 - Next: inspect scoped diff/frozen comparison, commit and push only these files to Porter main, verify local/upstream/public IDs. No manual Vercel deployment because the app did not change. Resolve the audit commit ID with git rev-parse HEAD; do not add an endless self-referential receipt commit.
 
 - Audit cleanup: removed only task-created reproducible dist/out/cache/test-results and disposable /tmp audit scripts/fixture images after successful checks. Preserved dependencies, source, lockfile, historical proof/images, new audit evidence, Vercel link and unread .env.
+
+- 2026-10-04T15:55:52.889987Z audit publication receipt: 27edb6578d0e7ccf52648e99a070ecbdafe3e77e pushed to Porter main and independently matched by git ls-remote. Worktree clean and main aligned with origin/main. Frozen contract, pin, receipts, proof, blurb, runbook and src/ comparison passed again after commit. All audit deliverables are backed up on public main. This state-only receipt follows that verified checkpoint; resolve its own commit with git rev-parse HEAD and verify public main before handoff.
