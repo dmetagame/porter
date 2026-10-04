@@ -3,10 +3,12 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-04
-Status: FRONTEND_REDESIGN_PUBLISHED
-Active objective: Redesign, build, mock checks, contrast and fresh public verification are complete. Source checkpoint is pushed and verified. Push only this publication receipt to Porter main, verify it, then stop. No .env read, key request, signing, contract deployment, other repository access or DoraHacks submission is authorized.
+Status: AUDIT_VERIFIED_PENDING_PUSH
+Active objective: Audit verified. No P0; one P1 inaccurate verification-documentation finding fixed, no unresolved P0/P1. Commit and push the scoped audit report/docs/tests/snapshots to Porter main, verify the push, then stop. No app/contract/proof/design change or manual redeploy; never read .env or sign.
 
 ## Workspace
+
+- Audit baseline reconciled: local and public main d78a1e551e9249d39f5269d43e478f861bf17c8a; clean worktree, sole origin dmetagame/porter, GitHub authenticated as dmetagame. Previous receipt-push instruction was stale: that receipt is already public.
 
 - Redesign starting main/public main: b994a6269bad2b550e54a7568a3484215d7c7a26; worktree initially clean. Sole remote still Porter and GitHub auth verified. All prior mainnet work is completed history, not current signing authorization.
 - Repository/origin: https://github.com/dmetagame/porter.git; sole fetch/push remote, authenticated GitHub dmetagame.
@@ -100,3 +102,16 @@ Active objective: Redesign, build, mock checks, contrast and fresh public verifi
 - Redesign source checkpoint 4d93911179c665386e3b4802db9bb401c3ba186d pushed to Porter main and independently verified with git ls-remote; tracked worktree was clean after push. Git-triggered production https://porter-q1iudcaa2-dmetagames-projects.vercel.app is Ready. Fresh stable URL checked again at 2026-10-04T15:25:21.087Z with the new heading, frozen proof links/gas and no error/overflow. This receipt-only handoff follows that checkpoint; resolve its own ID with git rev-parse HEAD and compare public main before ending.
 
 - Cleanup: task production preview stopped (exit 130); removed reproducible dist/, out/, cache/, .vercel/output/ and test-results/. Source, lockfile, all verified/labeled images, frozen proof, Vercel link and the unread .env are preserved. No other repository was read or written. No DoraHacks submission. Final action: commit/push this handoff and redesign-verification.json only, verify main, then stop.
+
+- 2026-10-04 audit checkpoint: .env ignore check passed and git log --all -- .env is empty; contents not read. npm run test:contract passed 16 tests including 256 conservation fuzz cases under a namespace masking .env. Fresh RPC/bytecode comparison, wallet/browser audit and secret-history scan pending.
+
+## Audit handoff — 2026-10-04T15:51:10.364226Z
+
+- Baseline/workspace: /home/rouma/porter, main, public/local d78a1e551e9249d39f5269d43e478f861bf17c8a. Sole origin Porter; authenticated dmetagame. Older redesign handoff is historical and does not authorize further styling or deployments.
+- Report: docs/AUDIT.md. P1: README/VERIFICATION falsely described current mock-only browser tests as local-EVM execution, and VERIFICATION still denied the existing proof. Corrected that reproducible documentation defect; proof claims unchanged. Note: issuer-blocked payee can keep funds locked without cancellation; contract unchanged.
+- Changed: README.md test-scope sentence; docs/VERIFICATION.md; test/Porter.t.sol payee-failure rollback/retry check; browser-tests/porter.spec.ts reverted/unmined recovery checks; docs/AUDIT.md; evidence/audit-rpc.json, audit-browser.json, audit-security.json; this state. No src/, contracts/, pinned address, recorded transactions, blurb, design or operator-runbook change.
+- Verification: 17 contract tests (256 fuzz cases), 4 unit tests, build and 8 production browser fixtures passed. Fresh Arc runtime/creation/token/room/transfers/gas matched independently compiled output and frozen proof. Six real public pages (light/dark,1440/390/320) HTTPS 200, correct proof, visible focus and no overflow; JS/CSS bytes match main build.
+- .env ignored/untracked and absent from all reachable history; never read. Pattern/BIP39/history scans found no detected secrets in stated scope. All Foundry/Vite/browser commands masked .env; mock images redirected to /tmp, leaving old evidence intact. No wallet request on actual live checks; simulated tests only. No contract deployment, other repository access or DoraHacks submission.
+- Next: inspect scoped diff/frozen comparison, commit and push only these files to Porter main, verify local/upstream/public IDs. No manual Vercel deployment because the app did not change. Resolve the audit commit ID with git rev-parse HEAD; do not add an endless self-referential receipt commit.
+
+- Audit cleanup: removed only task-created reproducible dist/out/cache/test-results and disposable /tmp audit scripts/fixture images after successful checks. Preserved dependencies, source, lockfile, historical proof/images, new audit evidence, Vercel link and unread .env.

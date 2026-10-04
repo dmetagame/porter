@@ -1,0 +1,67 @@
+{
+  "receiptGas": [
+    {
+      "action": "deploy",
+      "transaction": "0xa0c578a5831a51f7ab7327b34ceadd940df28a0e0863d64d04d7d335a8a99580",
+      "gasUsed": "598559",
+      "effectiveGasPrice": "20000000000",
+      "gasUSDC": "0.01197118",
+      "status": "success"
+    },
+    {
+      "action": "open",
+      "transaction": "0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+      "gasUsed": "216518",
+      "effectiveGasPrice": "20000000000",
+      "gasUSDC": "0.00433036",
+      "status": "success"
+    },
+    {
+      "action": "settle",
+      "transaction": "0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+      "gasUsed": "85972",
+      "effectiveGasPrice": "20000000000",
+      "gasUSDC": "0.00171944",
+      "status": "success"
+    }
+  ],
+  "checkedAt": "2026-10-04T15:47:05.920Z",
+  "rpc": "https://rpc.mainnet.arc.io",
+  "runtimeMatchesFreshCompilation": true,
+  "runtimeHash": "0x62f03541e64a796e2bf4f4e056843f547297f2139e0436984e5db5ea8cf0314d",
+  "creationInputMatches": true,
+  "creationNativeValue": "0",
+  "deploymentTransaction": "0xa0c578a5831a51f7ab7327b34ceadd940df28a0e0863d64d04d7d335a8a99580",
+  "deploymentBlock": "24211715",
+  "openingBlock": "24211733",
+  "settlementBlock": "24211859",
+  "chainId": 5042,
+  "contract": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+  "token": "0x3600000000000000000000000000000000000000",
+  "roomId": "1",
+  "openTransaction": "0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+  "settleTransaction": "0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+  "sender": "0xEE3eA6f858aE84dD6959f241DfC257a2f8fA3f53",
+  "payee": "0xEE3eA6f858aE84dD6959f241DfC257a2f8fA3f53",
+  "caller": "0xEE3eA6f858aE84dD6959f241DfC257a2f8fA3f53",
+  "senderAlsoSettled": true,
+  "builderControlled": true,
+  "independentUse": false,
+  "payoutBaseUnits": "100000",
+  "bountyBaseUnits": "10000",
+  "payoutUSDC": "0.1",
+  "bountyUSDC": "0.01",
+  "dueAt": "1791112738",
+  "settlementTimestamp": "1791112745",
+  "gasUsed": "85972",
+  "effectiveGasPrice": "20000000000",
+  "gasCostNativeBaseUnits": "1719440000000000",
+  "gasCostUSDC": "0.00171944",
+  "openingTransferBaseUnits": "110000",
+  "settlementTransferBaseUnits": [
+    "100000",
+    "10000"
+  ],
+  "roomSettled": true,
+  "recordedProofMatches": true
+}

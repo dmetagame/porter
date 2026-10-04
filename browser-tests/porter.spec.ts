@@ -20,7 +20,7 @@ const abi = parseAbi([
 const screenshots = "evidence/browser/redesign";
 mkdirSync(screenshots, { recursive: true });
 
-async function fixture(page: Page, options: { empty?: boolean; due?: boolean; wallet?: boolean; wrongChain?: boolean; pending?: boolean; unpinned?: boolean; exactAllowance?: boolean } = {}) {
+async function fixture(page: Page, options: { empty?: boolean; due?: boolean; wallet?: boolean; wrongChain?: boolean; pending?: boolean; unpinned?: boolean; exactAllowance?: boolean; revertedReceipt?: boolean; missingReceipt?: boolean } = {}) {
   const writes: { method: string; params: any[] }[] = [];
   const timestamp = Math.floor(Date.now() / 1000);
   const dueAt = options.due ? timestamp - 60 : Number(proof.dueAt);
@@ -44,10 +44,10 @@ async function fixture(page: Page, options: { empty?: boolean; due?: boolean; wa
           gasLimit: toHex(30000000n), gasUsed: "0x0", size: "0x0", difficulty: "0x0", totalDifficulty: "0x0",
           transactions: [], uncles: [], miner: sender, extraData: "0x", nonce: "0x0000000000000000",
         }; break;
-        case "eth_getTransactionReceipt": result = {
+        case "eth_getTransactionReceipt": if (options.missingReceipt) { result = null; break; } result = {
           transactionHash: proof.openTransaction, transactionIndex: "0x0", blockHash: "0x" + "11".repeat(32), blockNumber: "0x1717463",
           from: sender, to: pin.address, cumulativeGasUsed: toHex(216518n), gasUsed: toHex(216518n), effectiveGasPrice: toHex(20000000000n),
-          contractAddress: null, status: "0x1", type: "0x2", logs: [], logsBloom: "0x" + "00".repeat(256),
+          contractAddress: null, status: options.revertedReceipt ? "0x0" : "0x1", type: "0x2", logs: [], logsBloom: "0x" + "00".repeat(256),
         }; break;
         case "eth_call": {
           const contract = params[0].to.toLowerCase() === token.toLowerCase() ? abi : artifact.abi;
@@ -216,4 +216,31 @@ test("unpinned layout keeps the operator control secondary and disabled without 
   await expect(page.getByRole("button", { name: "Deploy Porter · wallet signature" })).toBeDisabled();
   await page.setViewportSize({ width: 320, height: 900 });
   await noOverflow(page);
+});
+
+// Audit fixtures: receipt state is simulated; no wallet request or broadcast occurs.
+test("reverted pending receipt never marks its unpaid room settled", async ({ page }) => {
+  const writes = await fixture(page, { pending: true, due: true, revertedReceipt: true });
+  await page.goto("/");
+  await expect(page.getByText(/New signatures are paused/)).toBeVisible();
+  await page.getByRole("button", { name: "Check confirmation" }).click();
+  await expect(page.getByText("Transaction reverted. No successful payment is being reported.", { exact: true })).toBeVisible();
+  await expect(page.locator(".transactions")).toContainText("reverted");
+  await expect(page.locator(".room .chip")).toHaveText("Due · confirm onchain");
+  expect(await page.evaluate(() => sessionStorage.getItem("porter.pending"))).toBeNull();
+  expect(writes).toEqual([]);
+});
+
+test("unmined pending receipt keeps signatures paused and reports no confirmation", async ({ page }) => {
+  const writes = await fixture(page, { pending: true, due: true, missingReceipt: true });
+  await page.goto("/");
+  await expect(page.getByText(/New signatures are paused/)).toBeVisible();
+  await page.getByRole("button", { name: "Check confirmation" }).click();
+  await expect(page.getByRole("alert")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Connect wallet", exact: true })).toBeDisabled();
+  await expect(page.locator(".transactions")).toContainText("submitted");
+  await expect(page.locator(".room .chip")).toHaveText("Due · confirm onchain");
+  expect(await page.evaluate(() => sessionStorage.getItem("porter.pending"))).not.toBeNull();
+  await expect(page.getByText(/Transaction confirmed. State refreshed/)).toHaveCount(0);
+  expect(writes).toEqual([]);
 });

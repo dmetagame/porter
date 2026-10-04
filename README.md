@@ -32,7 +32,7 @@ npm run build
 npm run dev
 ```
 
-`npm run build` compiles this project's `contracts/Porter.sol`, generates its own ABI/bytecode artifact, typechecks the app and builds production assets in `dist/`. `npm run preview` serves that production output. No other project artifacts are used. `npm run test:browser` checks desktop/mobile states and an explicitly isolated local-EVM wallet workflow; see [verification](docs/VERIFICATION.md).
+`npm run build` compiles this project's `contracts/Porter.sol`, generates its own ABI/bytecode artifact, typechecks the app and builds production assets in `dist/`. `npm run preview` serves that production output. No other project artifacts are used. `npm run test:browser` checks desktop/mobile states and wallet requests using explicitly labeled RPC/browser-wallet fixtures; it does not execute a local-EVM or mainnet payment. See [verification](docs/VERIFICATION.md).
 
 The separate Vercel project is `dmetagames-projects/porter`. Its [hosting configuration](vercel.json) typechecks and builds the app using the committed Porter artifact, without requiring Foundry on the hosting machine. Re-run `npm run build` locally when changing the contract, then commit the generated artifact. The initial publication used a local production build and `vercel deploy --prebuilt --prod`; public browser checks are recorded in [evidence/hosting.json](evidence/hosting.json), separate from mainnet payment evidence.
 

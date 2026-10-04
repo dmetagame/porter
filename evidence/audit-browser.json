@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-04T15:42:38.720Z",
+  "url": "https://porter-gilt.vercel.app",
+  "mainCommit": "d78a1e551e9249d39f5269d43e478f861bf17c8a",
+  "publicAssetsMatchProductionBuild": true,
+  "assets": [
+    {
+      "path": "/assets/index-V8S1rcMA.js",
+      "sha256": "1fd0cbaa3845522366c25a3ef9ec4ea5f5d26a238b03c2421cad1022c92b70f5",
+      "matchesMain": true
+    },
+    {
+      "path": "/assets/index-Ddklo4UP.css",
+      "sha256": "91d139ed3cba186c52ed219c6cfc57d98ab216f62fe416b745bef4f123d785f5",
+      "matchesMain": true
+    }
+  ],
+  "checks": [
+    {
+      "scheme": "light",
+      "width": 1440,
+      "httpStatus": 200,
+      "exactPinAndProofLinks": true,
+      "provedAmountsAndSameSender": true,
+      "gasUSDC": "0.00171944",
+      "noHorizontalOverflow": true,
+      "keyboardFocusVisible": true,
+      "noWallet": true,
+      "pageErrors": []
+    },
+    {
+      "scheme": "light",
+      "width": 390,
+      "httpStatus": 200,
+      "exactPinAndProofLinks": true,
+      "provedAmountsAndSameSender": true,
+      "gasUSDC": "0.00171944",
+      "noHorizontalOverflow": true,
+      "keyboardFocusVisible": true,
+      "noWallet": true,
+      "pageErrors": []
+    },
+    {
+      "scheme": "light",
+      "width": 320,
+      "httpStatus": 200,
+      "exactPinAndProofLinks": true,
+      "provedAmountsAndSameSender": true,
+      "gasUSDC": "0.00171944",
+      "noHorizontalOverflow": true,
+      "keyboardFocusVisible": true,
+      "noWallet": true,
+      "pageErrors": []
+    },
+    {
+      "scheme": "dark",
+      "width": 1440,
+      "httpStatus": 200,
+      "exactPinAndProofLinks": true,
+      "provedAmountsAndSameSender": true,
+      "gasUSDC": "0.00171944",
+      "noHorizontalOverflow": true,
+      "keyboardFocusVisible": true,
+      "noWallet": true,
+      "pageErrors": []
+    },
+    {
+      "scheme": "dark",
+      "width": 390,
+      "httpStatus": 200,
+      "exactPinAndProofLinks": true,
+      "provedAmountsAndSameSender": true,
+      "gasUSDC": "0.00171944",
+      "noHorizontalOverflow": true,
+      "keyboardFocusVisible": true,
+      "noWallet": true,
+      "pageErrors": []
+    },
+    {
+      "scheme": "dark",
+      "width": 320,
+      "httpStatus": 200,
+      "exactPinAndProofLinks": true,
+      "provedAmountsAndSameSender": true,
+      "gasUSDC": "0.00171944",
+      "noHorizontalOverflow": true,
+      "keyboardFocusVisible": true,
+      "noWallet": true,
+      "pageErrors": []
+    }
+  ]
+}

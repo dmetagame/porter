@@ -164,6 +164,24 @@ contract PorterTest {
         require(token.balanceOf(PAYEE) == PAYOUT);
     }
 
+    function testPayeeFailureKeepsFundsLockedUntilTransferCanSucceed() public {
+        uint256 id = open();
+        token.configure(PAYEE, false);
+        vm.warp(1060);
+        for (uint256 attempt; attempt < 2; attempt++) {
+            vm.expectRevert(Porter.TokenTransferFailed.selector);
+            settle(id);
+            require(token.balanceOf(PAYEE) == 0 && token.balanceOf(CALLER) == 0);
+            require(token.balanceOf(address(porter)) == 110_000 && porter.totalLocked() == 110_000);
+            (,,,,, bool paid) = porter.rooms(id);
+            require(!paid);
+        }
+        token.configure(address(0), false);
+        settle(id);
+        require(token.balanceOf(PAYEE) == PAYOUT && token.balanceOf(CALLER) == BOUNTY);
+        require(porter.totalLocked() == 0);
+    }
+
     function testRoomsCannotSpendEachOthersFunds() public {
         uint256 a = open();
         uint256 b = open();

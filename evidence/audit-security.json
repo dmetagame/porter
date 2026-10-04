@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-04T15:51:10.364226Z",
+  "baseline": "d78a1e551e9249d39f5269d43e478f861bf17c8a",
+  "envIgnored": true,
+  "envTracked": false,
+  "envHistoryEntries": 0,
+  "envContentsRead": false,
+  "reachableHistoryBlobsScanned": 79,
+  "reachableCommitMessagesScanned": 8,
+  "initialCurrentSourceFilesScanned": 65,
+  "credentialPatternPaths": [],
+  "validEnglishBIP39MnemonicPaths": [],
+  "keySizedCandidateOccurrencesReviewed": 104,
+  "unclassifiedCandidatePaths": [],
+  "candidateClassification": "Public Arc transaction/receipt fields and independently recomputed frozen-file SHA-256 digests; no candidate values printed.",
+  "scope": "Tracked and nonignored source tree, all reachable refs/commits; ignored .env excluded. Pattern scans do not prove arbitrary secrets are absent."
+}
