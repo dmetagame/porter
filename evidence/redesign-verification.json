@@ -1,0 +1,246 @@
+{
+  "project": "Porter",
+  "checkedAt": "2026-10-04T14:55:52.906Z",
+  "productionBuild": "passed with .env masked",
+  "browserTests": {
+    "passed": 6,
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "mockSigningRequests": "rejected locally; never broadcast",
+    "covers": [
+      "proved receipt",
+      "empty form/queue",
+      "connected wallet",
+      "network switch",
+      "exact approval/open/settle terms",
+      "fee estimate",
+      "pending recovery",
+      "unpinned operator control",
+      "validation",
+      "keyboard focus",
+      "44px buttons",
+      "reduced motion",
+      "no horizontal overflow",
+      "long typed payout wraps on mobile"
+    ]
+  },
+  "realReadOnlyChecks": [
+    {
+      "theme": "light",
+      "contrast": [
+        {
+          "label": "body",
+          "foreground": "#20332b",
+          "background": "#f1f4f0",
+          "contrast": 12.06
+        },
+        {
+          "label": "quiet labels",
+          "foreground": "#526359",
+          "background": "#fff",
+          "contrast": 6.39
+        },
+        {
+          "label": "link",
+          "foreground": "#275942",
+          "background": "#fff",
+          "contrast": 8.1
+        },
+        {
+          "label": "split labels",
+          "foreground": "#526359",
+          "background": "#e4ede4",
+          "contrast": 5.33
+        },
+        {
+          "label": "errors",
+          "foreground": "#923c32",
+          "background": "#fff1ec",
+          "contrast": 6.53
+        },
+        {
+          "label": "primary action",
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(39, 89, 66)",
+          "contrast": 8.1
+        }
+      ],
+      "realArcQueue": "Room #1 settled",
+      "walletInjected": false,
+      "noTransactionsSent": true
+    },
+    {
+      "theme": "dark",
+      "contrast": [
+        {
+          "label": "body",
+          "foreground": "#eef4ed",
+          "background": "#141e19",
+          "contrast": 15.29
+        },
+        {
+          "label": "quiet labels",
+          "foreground": "#b1c4b6",
+          "background": "#1c2a22",
+          "contrast": 8.15
+        },
+        {
+          "label": "link",
+          "foreground": "#bed8ac",
+          "background": "#1c2a22",
+          "contrast": 9.69
+        },
+        {
+          "label": "split labels",
+          "foreground": "#b1c4b6",
+          "background": "#293b2c",
+          "contrast": 6.51
+        },
+        {
+          "label": "errors",
+          "foreground": "#ffc4b6",
+          "background": "#3d2522",
+          "contrast": 9.3
+        },
+        {
+          "label": "primary action",
+          "foreground": "rgb(20, 30, 25)",
+          "background": "rgb(190, 216, 172)",
+          "contrast": 11.07
+        }
+      ],
+      "realArcQueue": "Room #1 settled",
+      "walletInjected": false,
+      "noTransactionsSent": true
+    }
+  ],
+  "scope": "Presentation only; frozen files and wallet handlers compared byte-for-byte.",
+  "frozenSha256": {
+    "contracts/Porter.sol": "68515a0832fcdd93a0443fd709a4dc1a4d7b71b58bce172c101460f755538d1a",
+    "docs/HACKATHON_BLURB.md": "a366f84fdfcb130355de3866d8836959dcf89772206389bbcf68112046183be8",
+    "docs/OPERATOR.md": "f21c74ab4e754964bcf2a272b9209e602c365943a47c0f613d53c16282302799",
+    "evidence/deployment.json": "134b6bf00b0e7f2a067c36ccd7c74e8c53dfd88f29ae9922f0474242d672e62f",
+    "evidence/mainnet-proof.json": "868542044e75822fb4bdc82dbdfd6ef9478a375ae3918528c62185965d4901d3",
+    "wallet-handlers": "433d5f9b6187d673f5206d3771a45a668ed7b27815a63040d033921505e82f03"
+  },
+  "publication": {
+    "url": "https://porter-gilt.vercel.app",
+    "vercelProject": "dmetagames-projects/porter",
+    "vercelProjectId": "prj_9DlI1gjs2YDzbfg1nNBZKm5eTj2r",
+    "deploymentId": "dpl_EGu8tYDKEmo6fKKqPj3iYj9uvp8B",
+    "checkedAt": "2026-10-04T15:13:20.122Z",
+    "longTypedAmountOverflow": false,
+    "checks": [
+      {
+        "theme": "light",
+        "width": 1440,
+        "httpStatus": 200,
+        "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+        "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+        "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+        "lockedUSDC": "0.11",
+        "payoutUSDC": "0.10",
+        "bountyUSDC": "0.01",
+        "actualSettleGasUSDC": "0.00171944",
+        "senderAlsoSettled": true,
+        "walletInjected": false,
+        "rpcFixtures": false,
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "theme": "light",
+        "width": 390,
+        "httpStatus": 200,
+        "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+        "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+        "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+        "lockedUSDC": "0.11",
+        "payoutUSDC": "0.10",
+        "bountyUSDC": "0.01",
+        "actualSettleGasUSDC": "0.00171944",
+        "senderAlsoSettled": true,
+        "walletInjected": false,
+        "rpcFixtures": false,
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "theme": "light",
+        "width": 320,
+        "httpStatus": 200,
+        "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+        "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+        "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+        "lockedUSDC": "0.11",
+        "payoutUSDC": "0.10",
+        "bountyUSDC": "0.01",
+        "actualSettleGasUSDC": "0.00171944",
+        "senderAlsoSettled": true,
+        "walletInjected": false,
+        "rpcFixtures": false,
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "httpStatus": 200,
+        "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+        "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+        "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+        "lockedUSDC": "0.11",
+        "payoutUSDC": "0.10",
+        "bountyUSDC": "0.01",
+        "actualSettleGasUSDC": "0.00171944",
+        "senderAlsoSettled": true,
+        "walletInjected": false,
+        "rpcFixtures": false,
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "theme": "dark",
+        "width": 390,
+        "httpStatus": 200,
+        "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+        "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+        "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+        "lockedUSDC": "0.11",
+        "payoutUSDC": "0.10",
+        "bountyUSDC": "0.01",
+        "actualSettleGasUSDC": "0.00171944",
+        "senderAlsoSettled": true,
+        "walletInjected": false,
+        "rpcFixtures": false,
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "theme": "dark",
+        "width": 320,
+        "httpStatus": 200,
+        "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+        "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+        "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+        "lockedUSDC": "0.11",
+        "payoutUSDC": "0.10",
+        "bountyUSDC": "0.01",
+        "actualSettleGasUSDC": "0.00171944",
+        "senderAlsoSettled": true,
+        "walletInjected": false,
+        "rpcFixtures": false,
+        "pageErrors": [],
+        "horizontalOverflow": false
+      }
+    ]
+  },
+  "finalLongAmountRefinement": "Production rebuilt; all 6 browser tests pass again. Frozen files and wallet handlers still byte-identical."
+}

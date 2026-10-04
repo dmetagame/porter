@@ -29,7 +29,6 @@ import artifact from "./porter-artifact.json";
 import deployment from "../evidence/deployment.json";
 import mainnetProof from "../evidence/mainnet-proof.json";
 import "./styles.css";
-import "@fontsource/barlow-condensed/600.css";
 import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/500.css";
 import "@fontsource/dm-sans/600.css";
@@ -76,6 +75,11 @@ const pinned = deployment.address as Address | null;
 const proofReady =
   mainnetProof.status === "confirmed" &&
   Boolean(mainnetProof.openTransaction && mainnetProof.settleTransaction);
+// Preserve every decimal; pad short amounts for the receipt's typographic alignment.
+function displayAmount(value: string) {
+  const [whole, fraction = ""] = value.split(".");
+  return `${whole}.${fraction.padEnd(2, "0")}`;
+}
 function download(name: string, data: unknown) {
   const url = URL.createObjectURL(
     new Blob(
@@ -572,83 +576,69 @@ function App() {
         Skip to settlement desk
       </a>
       <header className="shell header">
-        <a className="brand" href="#">
-          porter
-          <span className="brand-mark" aria-hidden="true">
-            ↗
-          </span>
+        <a className="brand" href="#" aria-label="Porter home">
+          <svg className="brand-mark" viewBox="0 0 28 28" aria-hidden="true">
+            <path d="M14 3v9M6 23v-7h16v7M14 12v4" />
+            <circle cx="14" cy="3" r="2" /><circle cx="6" cy="23" r="2" /><circle cx="22" cy="23" r="2" />
+          </svg>
+          Porter
         </a>
-        <span className="network">
-          ARC MAINNET <span>5042</span>
-        </span>
-        <a className="source" href="https://github.com/dmetagame/porter">
-          Source ↗
-        </a>
+        <span className="network"><span className="network-dot" aria-hidden="true" /> Arc mainnet <span className="network-chain">5042</span></span>
+        <a className="source" href="https://github.com/dmetagame/porter">Source <span aria-hidden="true">↗</span></a>
       </header>
       <main>
-        <section className="shell hero">
-          <div>
-            <p className="eyebrow">A payment with a departure time</p>
-            <h1>
-              Set it down.
-              <br />
-              <span>Someone picks it up.</span>
-            </h1>
-            <p className="lede">
-              Lock a USDC payment and a caller bounty. When it’s due, any wallet
-              can deliver the payment and collect the bounty in one transaction.
-            </p>
+        <section className="shell instrument" aria-labelledby="instrument-heading">
+          <div className="instrument-intro">
+            <p className="eyebrow">Scheduled USDC payments</p>
+            <h1 id="instrument-heading">One lock.<br /><span>Two payments.</span></h1>
+            <p className="lede">A sender locks a scheduled payout plus a caller bounty. Once due, anyone can settle the room and release both payments in one transaction.</p>
+            <p className="currency-note"><span aria-hidden="true">↳</span> Payout, bounty and gas. All USDC.</p>
             <div className="wallet-actions">
               <button onClick={connect} disabled={disabled}>
                 {account ? `Reconnect ${short(account)}` : "Connect wallet"}
+                <span aria-hidden="true">↗</span>
               </button>
               {account && chain !== arc.id && (
-                <button
-                  className="secondary"
-                  onClick={switchChain}
-                  disabled={disabled}
-                >
-                  Switch to Arc · 5042
-                </button>
+                <button className="secondary" onClick={switchChain} disabled={disabled}>Switch to Arc · 5042</button>
               )}
             </div>
-            <p className="hint">
+            <p className="wallet-context">
               {ready
                 ? `${balance === undefined ? "Reading USDC balance…" : `${units(balance)} USDC available`} · one balance for payment and gas`
                 : "Browser wallet · real USDC · no mainnet faucet"}
             </p>
+            <a className="desk-link" href="#desk">Open a scheduled room <span aria-hidden="true">↓</span></a>
           </div>
-          <aside className="manifest" aria-label="Default proof room">
-            <div className="manifest-head">
-              <span>DEFAULT PROOF ROOM</span>
-              <span className="chip">Builder-controlled test</span>
+          <aside className="payment-receipt" aria-label={proofReady ? "Confirmed mainnet payment split" : "Labeled default payment split"}>
+            <div className="receipt-heading">
+              <span className="eyebrow">{proofReady ? `Arc receipt · Room #${mainnetProof.roomId}` : "Default room · not a receipt"}</span>
+              <span className={`chip ${proofReady ? "closed" : ""}`}>{proofReady ? "Settled" : "Unsigned"}</span>
             </div>
-            <div className="manifest-amount">
-              <span>Payee receives</span>
-              <strong>
-                0.10 <small>USDC</small>
-              </strong>
+            <div className="receipt-locked">
+              <span>Sender locked</span>
+              <strong>{displayAmount(proofReady ? units(BigInt(mainnetProof.payoutBaseUnits) + BigInt(mainnetProof.bountyBaseUnits)) : "0.11")} <small>USDC</small></strong>
             </div>
-            <div className="manifest-line">
-              <span>Caller receives</span>
-              <b>0.01 USDC</b>
+            <div className="payment-split">
+              <div className="split-branch" aria-hidden="true"><span /><span /></div>
+              <div className="split-payment payee-payment">
+                <span>Payee payout</span>
+                <strong>{displayAmount(proofReady ? mainnetProof.payoutUSDC : "0.10")}<small>USDC</small></strong>
+                <span className="split-caption">{proofReady ? "Paid to the payee" : "Labeled default"}</span>
+              </div>
+              <div className="split-payment bounty-payment">
+                <span>Caller bounty</span>
+                <strong>{displayAmount(proofReady ? mainnetProof.bountyUSDC : "0.01")}<small>USDC</small></strong>
+                <span className="split-caption">{proofReady ? "Paid to the caller" : "Labeled default"}</span>
+              </div>
             </div>
-            <div className="manifest-line">
-              <span>Sender locks</span>
-              <b>0.11 USDC</b>
-            </div>
-            <div className="manifest-line">
-              <span>Gas</span>
-              <b>Also USDC</b>
-            </div>
-            <div className="manifest-status">
-              <span className="dot" />
-              <span>
-                {proofReady
-                  ? "Mainnet receipt available below"
-                  : "Mainnet proof does not exist yet"}
-              </span>
-            </div>
+            <div className="receipt-gas"><span>{proofReady ? "Actual settle gas" : "Gas currency"}</span><b>{proofReady ? `${mainnetProof.gasCostUSDC} USDC` : "Also USDC"}</b></div>
+            <p className="receipt-context">{proofReady ? "Builder-controlled test. The sender also settled; the payee and caller were the same builder wallet." : "These are suggested room terms. Mainnet proof does not exist yet."}</p>
+            {proofReady && (
+              <div className="receipt-links">
+                <a href={txLink(mainnetProof.openTransaction!)}>Open transaction <span aria-hidden="true">↗</span></a>
+                <a href={txLink(mainnetProof.settleTransaction!)}>Settle transaction <span aria-hidden="true">↗</span></a>
+              </div>
+            )}
           </aside>
         </section>
         <section className="shell status-strip" aria-label="Deployment status">
@@ -659,11 +649,11 @@ function App() {
                 <code>{contract}</code> ↗
               </a>
             ) : (
-              <strong>No pinned mainnet address yet</strong>
+              <strong>{pinned ? "Checking pinned contract…" : "No pinned mainnet address yet"}</strong>
             )}
           </div>
           <span className="chip">
-            {contract ? "Runtime + USDC verified" : "Unsigned wallet path"}
+            {contract ? "Runtime + USDC verified" : pinned ? "Verifying runtime" : "Unsigned wallet path"}
           </span>
         </section>
         <div className="shell notices" aria-live="polite">
@@ -702,8 +692,8 @@ function App() {
         >
           <div className="section-title">
             <div>
-              <p className="eyebrow">Settlement desk</p>
-              <h2 id="desk-heading">Send later. Settle once.</h2>
+              <p className="eyebrow">Make the next payment</p>
+              <h2 id="desk-heading">Open. Wait. Settle.</h2>
             </div>
             <button
               className="text-button"
@@ -726,16 +716,16 @@ function App() {
                 void open();
               }}
             >
-              <h3>Open a room</h3>
+              <div className="panel-heading"><h3>Open a room</h3><span className="panel-label">Sender</span></div>
               <p className="muted">
-                This room pays once. Funding cannot be cancelled; no automatic
-                keeper is promised.
+                Choose the payee, the split and the due time. Funding pays once and cannot be cancelled.
               </p>
               <label>
                 Payee wallet
                 <input
                   value={payee}
                   onChange={(event) => setPayee(event.target.value)}
+                  className="address-input"
                   placeholder="0x…"
                   autoComplete="off"
                   spellCheck={false}
@@ -762,6 +752,7 @@ function App() {
                   />
                 </label>
               </div>
+              <p className="field-note">Labeled defaults: 0.10 USDC payout + 0.01 USDC bounty.</p>
               <label>
                 Due after
                 <select
@@ -814,31 +805,30 @@ function App() {
               </button>
               <p className="hint">
                 {!contract
-                  ? "An operator must deploy and pin Porter before funding is enabled."
+                  ? pinned ? "Checking the pinned contract before enabling funding." : "An operator must deploy and pin Porter before funding is enabled."
                   : !ready
                     ? "Connect a wallet on Arc to approve and fund."
                     : "Approval and room funding are two separate wallet signatures."}
               </p>
             </form>
             <div className="queue">
-              <h3>Rooms on Arc</h3>
+              <div className="panel-heading"><h3>Rooms on Arc</h3><span className="panel-label">Caller</span></div>
               <p className="muted">
                 Any caller can settle once due. The caller needs USDC for gas
                 before the bounty arrives.
               </p>
               {rooms.length === 0 && (
                 <div className="empty">
-                  <span className="empty-icon" aria-hidden="true">
-                    ⇢
-                  </span>
+                  <span className="empty-icon" aria-hidden="true">↳</span>
                   <h4>
-                    {contract
+                    {busy ? "Reading rooms from Arc…" : contract
                       ? "No rooms opened yet"
-                      : "Awaiting a mainnet deployment"}
+                      : pinned ? "Verifying pinned contract…" : "Awaiting a mainnet deployment"}
                   </h4>
                   <p>
-                    {contract
-                      ? "Fund the first room from the form. Its terms will be read directly from Arc."
+                    {busy || (pinned && !contract)
+                      ? "Room terms will appear after the current Arc read completes."
+                      : contract ? "Fund the first room from the form. Its terms will be read directly from Arc."
                       : "No payment, balance, or fee is being simulated here. The operator wallet path is below."}
                   </p>
                 </div>
@@ -866,7 +856,7 @@ function App() {
                         <dt>Payee</dt>
                         <dd>
                           <a href={`${EXPLORER}/address/${room.payee}`}>
-                            {short(room.payee)} ↗
+                            <code>{short(room.payee)}</code> ↗
                           </a>
                         </dd>
                       </div>
@@ -905,11 +895,11 @@ function App() {
                             </span>
                             <p>
                               Estimated gas units:{" "}
-                              <code>{fee.gas.toString()}</code>
+                              <span>{fee.gas.toString()}</span>
                             </p>
                             <p>
                               Gas limit with 20% buffer:{" "}
-                              <code>{fee.gasLimit.toString()}</code>
+                              <span>{fee.gasLimit.toString()}</span>
                             </p>
                             <p>
                               Maximum fee: <b>{gasDollars(fee.maximum)} USDC</b>
@@ -949,43 +939,17 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="shell evidence-section">
+        <section className="shell activity-section" aria-labelledby="activity-heading">
+          <div><p className="eyebrow">Your wallet requests</p><h2 id="activity-heading">Transaction activity</h2></div>
           <div>
-            <p className="eyebrow">Evidence before claims</p>
-            <h2>Follow the money.</h2>
-          </div>
-          <div>
-            <p>
-              {proofReady
-                ? "Open and settlement receipts are recorded in evidence/."
-                : "No confirmed mainnet proof is published. Claims remain empty until both opening and settlement are real Arc transactions."}
-            </p>
-            {proofReady && (
-              <div className="proof-links">
-                <a href={txLink(mainnetProof.openTransaction!)}>
-                  Open transaction ↗
-                </a>
-                <a href={txLink(mainnetProof.settleTransaction!)}>
-                  Settle transaction ↗
-                </a>
-              </div>
-            )}
-            <p className="muted">
-              Early payment prototype. No keeper network, no bounty-over-gas
-              claim, and no evidence of anyone besides the builder using it.
-            </p>
-            {history.length > 0 && (
+            {history.length > 0 ? (
               <ul className="transactions">
                 {history.map((item) => (
-                  <li key={item.hash}>
-                    <a href={txLink(item.hash)}>
-                      {item.action} · {short(item.hash)} ↗
-                    </a>
-                    <span>{item.status}</span>
-                  </li>
+                  <li key={item.hash}><a href={txLink(item.hash)}>{item.action} · <code>{short(item.hash)}</code> ↗</a><span className="chip">{item.status}</span></li>
                 ))}
               </ul>
-            )}
+            ) : <p className="muted">No requests from this browser yet. Submitted transactions will appear here with their confirmation status.</p>}
+            <p className="hint">Early payment prototype. No keeper network, no bounty-over-gas claim, and no evidence of anyone besides the builder using it.</p>
           </div>
         </section>
         {!pinned && (
@@ -1030,7 +994,7 @@ function App() {
         )}
       </main>
       <footer className="shell footer">
-        <span>Porter · a small payment experiment</span>
+        <span>Porter · scheduled USDC payments</span>
         <a href="https://docs.arc.io/arc/concepts/stablecoin-native-model">
           Why gas is USDC ↗
         </a>

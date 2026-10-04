@@ -3,11 +3,12 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-04
-Status: VERIFIED_MAINNET_PROOF_PUBLISHED
-Active objective: Mainnet proof, source push and existing public app are verified. Push only this publication-receipt handoff to Porter main, verify it, then stop. No additional signing or DoraHacks submission is authorized.
+Status: FRONTEND_REDESIGN_PUBLICLY_VERIFIED
+Active objective: Redesign, build, mock checks, contrast and fresh public verification are complete. Push only the scoped frontend/design/test evidence to main and verify publication, then stop. No .env read, key request, signing, contract deployment, other repository access or DoraHacks submission is authorized.
 
 ## Workspace
 
+- Redesign starting main/public main: b994a6269bad2b550e54a7568a3484215d7c7a26; worktree initially clean. Sole remote still Porter and GitHub auth verified. All prior mainnet work is completed history, not current signing authorization.
 - Repository/origin: https://github.com/dmetagame/porter.git; sole fetch/push remote, authenticated GitHub dmetagame.
 - Worktree: /home/rouma/porter; branch main.
 - Starting local/public main: 3790bb00a3cac23a5e08e79ebf3f4d55ffc630d0; worktree initially clean. State's previous hosting receipt is reconciled with that observed commit.
@@ -18,6 +19,9 @@ Active objective: Mainnet proof, source push and existing public app are verifie
 
 ## Authorization And Safeguards
 
+- Current redesign: do not read .env, use a key, sign, deploy any contract, or access another repository. Build/preview commands run in a verified bwrap namespace masking Porter .env with /dev/null; the actual file is neither read nor modified.
+- Frozen hashes recorded outside the repository for contracts/, deployment.json, mainnet-proof.json, HACKATHON_BLURB.md, OPERATOR.md and the entire App wallet-handler section. Presentation changes must pass that comparison before committing.
+- New visual direction: mineral paper and deep green, one DM Sans voice, a real locked-amount split receipt above the form, exact explorer links and same-wallet disclosure. Retire dispatch blue and Barlow display styling. No invented metrics, chart or decorative motion.
 - User authorized one Arc mainnet deployment, exact 0.11 USDC approval, one scheduled room and same-key settlement on 2026-10-04. This superseded the earlier hosting-only prohibition on signing. All four transactions are now complete; do not repeat them.
 - .env is gitignored: git check-ignore .env passed; git status and git ls-files do not include it. Key format validated privately; key read only in memory, re-read at signing boundaries, never printed/exported/copied into another file. No seed phrase requested. Preserve .env without committing or uploading it.
 - No bridge, faucet, funds request, second caller, profit or independent-user claim. No DoraHacks submission. Only the existing Vercel project may be republished.
@@ -38,7 +42,15 @@ Active objective: Mainnet proof, source push and existing public app are verifie
 
 ## Work And Verification
 
-- No contract source or app source change. Regenerated src/porter-artifact.json identical to starting commit.
+- Redesign: actual locked amount now branches into payee payout/caller bounty at the top, with real receipt links, exact measured gas and same-builder disclosure. One DM Sans voice, mineral-paper/deep-green tokens, dark preference, larger amount inputs, labeled defaults, separate wallet activity and truthful loading/empty states. docs/DESIGN.md retires dispatch blue and describes the new system.
+- npm run build passed in the .env-masked bwrap namespace. vercel build --prod also passed there, using the existing Porter project. No secret file contents were read.
+- Six replacement Playwright checks passed. Read-only RPC fixtures and injected mock wallets cover empty/connected/proved, chain switch, exact approval/open/settle request terms, fee estimate, pending recovery, validation/focus, 1440/390/320 widths, both themes, reduced motion and disabled unpinned operator setup. Mock signing requests were rejected locally; no transaction was broadcast and no contract was deployed, including locally.
+- Real read-only local production loads showed settled room #1 without a wallet. Screenshots in evidence/browser/redesign/ separate clearly banner-labeled fixtures from actual-* images. Measured primary/quiet/link/error text contrasts exceed 4.5:1 in both themes; minimum measured light pair 5.33:1, dark pair 6.51:1. evidence/redesign-verification.json records the checks.
+- Frozen contracts, pin JSON, mainnet proof, four-sentence blurb and operator runbook remain byte-for-byte unchanged. Entire App wallet-handler section also matches the starting file. Form approval, funding, fee and settlement guards/callbacks are preserved.
+- Initial browser harness needed JSON imports compatible with the runner, Vite quote-aware fixture matching and the SDK-normalized rejection text. Final six tests pass. Contrast utility corrected its parsing of minified #fff; actual CSS contrast passes without palette changes.
+
+
+- Prior mainnet delivery changed no contract/app source. Current redesign changes only src/main.tsx presentation and src/styles.css; wallet handlers are byte-identical and src/porter-artifact.json is unchanged.
 - Added scripts/prove-mainnet.mjs: one-run .env signing path; refuses a prior journal/pin, checks chain/token/balance/pending nonce before signing, persists only public hashes/receipt facts, suppresses credential-bearing error details. It must not be rerun for this completed proof.
 - Added public evidence/mainnet-run.json for all four successful transactions, actual gas and same-wallet identity; journal marked proof-validators-confirmed only after tools succeeded.
 - Updated README and docs/OPERATOR.md to remove stale unsigned claims and state the completed same-wallet proof. Historical evidence/verification.json and evidence/browser/ describe earlier local/unsigned tests and are not current mainnet claims.
@@ -53,17 +65,16 @@ Active objective: Mainnet proof, source push and existing public app are verifie
 
 ## Risks And Next Actions
 
-- This proves one builder-controlled scheduled payment. Broader token restrictions and failure modes are not a mainnet audit. Room funding has no cancellation/refund/admin path; callers may race and lose gas.
-- Rebuild/republication and fresh production checks are complete. Do not create another project/domain/account or sign more transactions.
-- Proof checkpoint is pushed and verified; final production alias was rechecked after its Git-triggered build. Commit/push only this publication-receipt update and evidence/hosting.json to Porter main, verify that handoff commit, then stop.
-- Before commit, repeat .env ignore/status/tracked checks. Stage explicit paths, never .env or .vercel/ environment files. Stop if a secret safeguard fails.
+- The frozen proof establishes one builder-controlled payment. No independent use, profitability, keeper network or third-party audit is claimed. Permanent funding and possible caller races remain as documented in OPERATOR.md.
+- Verify fresh public light/dark desktop/mobile pages show the redesigned receipt and exact existing pinned address/open/settle links, then push only this repository's main branch and verify GitHub/Vercel publication.
+- Never stage .env, .vercel/ files, frozen mainnet records, contract sources or unrelated files. No other repository is accessible for this task.
 
 ## Session Handoff
 
-- Mainnet signing, validators, source checkpoint/push and production verification complete. No additional mainnet transaction is needed. No DoraHacks submission was made.
-- Preserve all mainnet receipts, generated proof/blurb, source artifact, lockfile and .env. Only reproducible task-created build caches/output may be cleaned after publishing; retain ignored nonsecret Vercel project link settings.
-- evidence/hosting.json now records the confirmed mainnet proof in fresh production browsers. Historical local/unsigned screenshots remain explicitly historical; only new mainnet-*.png screenshots show current real Arc proof.
-- After successful publishing, removed only task-created reproducible dist/, out/, cache/, .vercel/output/ and generated ignored .vercel/.env.production.local. Preserved the user's root .env untouched, nonsecret Vercel project link, source/artifact, dependencies/lockfile, all receipts, blurb and screenshots. Final commit guards must still exclude .env and .vercel/.
+- Read this file first. The mainnet proof section above is historical confirmed evidence, not permission to repeat signing. Current work is presentation only.
+- Current allowed frontend/design/test files are src/main.tsx, src/styles.css, docs/DESIGN.md, browser-tests/porter.spec.ts, this handoff and redesign verification/screenshots. OPERATOR.md and HACKATHON_BLURB.md are preserved exactly.
+- Build/preview with a bwrap namespace masking /home/rouma/porter/.env using /dev/null. Do not run the old mainnet signing script. The mask never reads or modifies the actual file.
+- Keep the existing Vercel link and all public proof intact. After production verification, stop the task preview and remove only reproducible task-created dist/out/cache/.vercel/output/test-results; preserve source, lockfile, evidence and the user's unread .env.
 
 ## Change Log
 
@@ -79,3 +90,9 @@ Active objective: Mainnet proof, source push and existing public app are verifie
 | 2026-10-04T11:20Z | Codex | Real mainnet proof validated | Deploy/approve/open/settle succeeded; pin/runtime and evidence tools accepted all receipts; sender/payee/caller same wallet; generated confirmed proof/blurb; publication pending |
 | 2026-10-04T11:34Z | Codex | Mainnet proof publicly verified | Existing Porter project redeployed; HTTPS 200 at 1440/390/320px; address and open/settle links match README and collector proof; settled room #1 visible; .env excluded from upload and source scope |
 | 2026-10-04T11:40Z | Codex | Proof publication receipt verified | 80077e0 pushed and independently verified on Porter public main; Git-triggered production Ready; stable public app rechecked against exact proof links; disposable output cleaned, root .env preserved |
+
+| 2026-10-04 | Codex | Frontend redesign verified locally | Actual split receipt, mineral/green light/dark system, 6 mock-only browser tests pass; build/env masking and contrast pass; all frozen files and wallet handlers unchanged |
+
+- Final refinement: a very long typed payout exposed mobile total overflow. The total now wraps within bounded grid columns without rounding/truncation. Rebuilt and all six browser tests pass, including the added long-amount check; frozen hashes still match.
+
+- Final public verification 2026-10-04T15:13:20.122Z: existing Porter project deployment dpl_EGu8tYDKEmo6fKKqPj3iYj9uvp8B is Ready. HTTPS 200 across light/dark and 1440/390/320px; exact pinned address, open/settle URLs, 0.11/0.10/0.01 split and 0.00171944 gas preserved; long typed payout wraps. No injected wallet, signing, mocks, page errors or horizontal overflow on public checks.
