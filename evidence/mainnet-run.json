@@ -1,0 +1,50 @@
+{
+  "project": "Porter",
+  "chainId": 5042,
+  "token": "0x3600000000000000000000000000000000000000",
+  "sender": "0xEE3eA6f858aE84dD6959f241DfC257a2f8fA3f53",
+  "payee": "0xEE3eA6f858aE84dD6959f241DfC257a2f8fA3f53",
+  "caller": "0xEE3eA6f858aE84dD6959f241DfC257a2f8fA3f53",
+  "senderAlsoSettled": true,
+  "builderControlled": true,
+  "independentUse": false,
+  "payoutBaseUnits": "100000",
+  "bountyBaseUnits": "10000",
+  "startedAt": "2026-10-04T11:17:48.862Z",
+  "status": "proof-validators-confirmed",
+  "transactions": {
+    "deployment": {
+      "hash": "0xa0c578a5831a51f7ab7327b34ceadd940df28a0e0863d64d04d7d335a8a99580",
+      "status": "success",
+      "blockNumber": "24211715",
+      "gasUsed": "598559",
+      "gasCostUSDC": "0.01197118"
+    },
+    "approval": {
+      "hash": "0xae15b1348dee74f09dc5a5bdfd14b1fa557e4dc6d3a146de37268cbd61fcc10d",
+      "status": "success",
+      "blockNumber": "24211725",
+      "gasUsed": "55438",
+      "gasCostUSDC": "0.00110876"
+    },
+    "opening": {
+      "hash": "0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+      "status": "success",
+      "blockNumber": "24211733",
+      "gasUsed": "216518",
+      "gasCostUSDC": "0.00433036"
+    },
+    "settlement": {
+      "hash": "0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+      "status": "success",
+      "blockNumber": "24211859",
+      "gasUsed": "85972",
+      "gasCostUSDC": "0.00171944"
+    }
+  },
+  "contract": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+  "roomId": "1",
+  "dueAt": "1791112738",
+  "completedAt": "2026-10-04T11:19:06.525Z",
+  "proofCheckedAt": "2026-10-04T11:20:10.661Z"
+}

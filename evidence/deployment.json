@@ -2,8 +2,13 @@
   "project": "Porter",
   "chainId": 5042,
   "token": "0x3600000000000000000000000000000000000000",
-  "address": null,
-  "transactionHash": null,
-  "runtimeHash": null,
-  "verified": false
+  "address": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+  "transactionHash": "0xa0c578a5831a51f7ab7327b34ceadd940df28a0e0863d64d04d7d335a8a99580",
+  "runtimeHash": "0x62f03541e64a796e2bf4f4e056843f547297f2139e0436984e5db5ea8cf0314d",
+  "blockNumber": "24211715",
+  "explorer": "https://explorer.arc.io/address/0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+  "transactionUrl": "https://explorer.arc.io/tx/0xa0c578a5831a51f7ab7327b34ceadd940df28a0e0863d64d04d7d335a8a99580",
+  "verified": true,
+  "verification": "Creation input, runtime and canonical token independently read from Arc RPC; no explorer source badge claimed.",
+  "checkedAt": "2026-10-04T11:19:38.648Z"
 }

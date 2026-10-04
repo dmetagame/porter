@@ -1,11 +1,17 @@
 {
   "project": "Porter",
-  "kind": "unsigned-app-hosting-check",
+  "kind": "confirmed-mainnet-proof-hosting-check",
   "url": "https://porter-gilt.vercel.app",
-  "checkedAt": "2026-10-03T11:45:01.651Z",
-  "startingCommit": "139cb3ae030df793248fabfac8376e4ec96a07cf",
+  "checkedAt": "2026-10-04T11:34:14.662Z",
+  "startingCommit": "3790bb00a3cac23a5e08e79ebf3f4d55ffc630d0",
   "vercelProject": "dmetagames-projects/porter",
-  "deploymentId": "dpl_4wS2xjXd7PaGFNZ6MwXragsvtC79",
+  "deploymentId": "dpl_ChZzJGJLZHjagpxQc7574t6kjLJR",
+  "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+  "openTransaction": "0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+  "settleTransaction": "0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+  "senderAlsoSettled": true,
+  "builderControlled": true,
+  "independentUse": false,
   "checks": [
     {
       "viewport": {
@@ -14,12 +20,13 @@
       },
       "status": 200,
       "title": "Porter · Scheduled USDC payments",
-      "unpinned": true,
-      "mainnetProof": "not-established",
-      "transactionLinks": 0,
+      "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+      "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+      "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
       "walletInjected": false,
       "pageErrors": [],
-      "horizontalOverflow": false
+      "horizontalOverflow": false,
+      "screenshot": "evidence/browser/mainnet-1440.png"
     },
     {
       "viewport": {
@@ -28,13 +35,29 @@
       },
       "status": 200,
       "title": "Porter · Scheduled USDC payments",
-      "unpinned": true,
-      "mainnetProof": "not-established",
-      "transactionLinks": 0,
+      "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+      "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+      "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
       "walletInjected": false,
       "pageErrors": [],
-      "horizontalOverflow": false
+      "horizontalOverflow": false,
+      "screenshot": "evidence/browser/mainnet-390.png"
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "status": 200,
+      "title": "Porter · Scheduled USDC payments",
+      "pinnedAddress": "0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6",
+      "openUrl": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+      "settleUrl": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+      "walletInjected": false,
+      "pageErrors": [],
+      "horizontalOverflow": false,
+      "screenshot": "evidence/browser/mainnet-320.png"
     }
   ],
-  "note": "Public app hosting only. No contract deployed, wallet connected, signature requested, or mainnet transaction sent."
+  "note": "Real Arc proof established by pin/evidence tools. Fresh production browsers used no wallet, signatures or RPC fixtures."
 }

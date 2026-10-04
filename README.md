@@ -2,20 +2,22 @@
 
 Porter is an early payment prototype on Arc: a sender locks a scheduled USDC payout plus a caller bounty in one room. Once due, any wallet may settle once. The payee receives the payout and the caller receives the bounty in the same transaction.
 
-Operator app: **[https://porter-gilt.vercel.app](https://porter-gilt.vercel.app)**. **Mainnet proof does not exist yet.** This unsigned page is published only so the operator can follow [docs/OPERATOR.md](docs/OPERATOR.md) from a browser. Hosting does not deploy the contract or establish payment evidence.
+Operator app: **[https://porter-gilt.vercel.app](https://porter-gilt.vercel.app)**. A builder-controlled Arc mainnet proof is recorded below. The sender, payee and caller were the same wallet; the sender also settled. See [docs/OPERATOR.md](docs/OPERATOR.md) for the wallet workflow and receipt validation.
 
 Arc makes payout, bounty and gas all USDC. A caller can compare the bounty with a USDC fee estimate without acquiring a second gas token. The bounty is received after execution; callers still need real USDC for gas up front. There is no mainnet faucet.
 
 Porter is not a keeper network, a promise that bounty exceeds gas, or evidence of anyone besides the builder using it. No automatic execution is promised. Rooms are one-shot; there is no cancel/refund/admin/sweep path. Use small amounts and confirm the payee carefully.
 
 <!-- PIN START -->
+Pinned address: [0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6](https://explorer.arc.io/address/0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6) on Arc mainnet (5042).
 
-Pinned address: **none yet**. No Porter mainnet deployment has been signed in this session. The app ships an unsigned operator wallet path and refuses approval until a matching Porter runtime and canonical USDC are verified.
+Deployment: [confirmed transaction](https://explorer.arc.io/tx/0xa0c578a5831a51f7ab7327b34ceadd940df28a0e0863d64d04d7d335a8a99580). Creation input, runtime, and canonical USDC verified by the read-only pin tool.
 <!-- PIN END -->
 
 <!-- PROOF START -->
+Mainnet proof: [open](https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835) and [settle](https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1).
 
-**Mainnet proof does not exist yet.** `evidence/mainnet-proof.json` has empty claims and null opening/settlement hashes. The four-sentence hackathon blurb is deliberately absent until both real Arc transactions are verified. Local tests do not qualify as mainnet proof.
+Builder-controlled test: payout 0.1 USDC; bounty 0.01 USDC; actual settlement gas 0.00171944 USDC. The sender also settled. No independent usage or future profitability is claimed.
 <!-- PROOF END -->
 
 ## Run and verify
@@ -37,7 +39,7 @@ The separate Vercel project is `dmetagames-projects/porter`. Its [hosting config
 ## Wallet path
 
 1. Connect an Ethereum-compatible browser wallet and switch to Arc mainnet (5042).
-2. Every fresh visitor uses the one pinned Porter contract, once the operator has completed [deployment and pinning](docs/OPERATOR.md). Its runtime and immutable USDC address are checked before approval.
+2. Every fresh visitor uses the pinned Porter contract shown above. Its runtime and immutable USDC address are checked before approval.
 3. Set a payee wallet. Default builder-controlled proof room: 0.10 USDC payout, 0.01 USDC bounty and a 60-second delay. These are suggested inputs, not a receipt.
 4. Sign **Approve exactly 0.11 USDC**, then **Fund and open room**. The due time is derived from the latest chain timestamp. Room funding transfers exactly payout plus bounty.
 5. When due, connect the caller wallet, refresh the queue, and select **Estimate settle fee**. The app reads real RPC gas units and max-fee data, displays the fee in USDC with 18-decimal accounting, then refreshes the estimate before signing.
@@ -58,12 +60,12 @@ Approval and app amounts use the ERC-20 interface's **6 decimals**. Gas uses nat
 
 `openRoom(payee,payout,bounty,dueAt)` locks immutable room terms and rejects zero/unsafe recipients, nonpositive amounts and a due time that has already passed. A received-balance check rejects short funding. `settle(roomId,expectedPayout,expectedBounty)` rejects early, repeated, unknown-room and wrong-amount calls; pays the locked recipient and current caller atomically. A failed token transfer rolls back both payout and state. The constructor token is immutable and there is no chain-ID hardcode.
 
-Accounting tests use a local token double. Arc-specific token restrictions and shared native/USDC behavior still need real-network validation; no third-party audit is claimed. Settlers can race: only the first successful call earns the bounty. A losing transaction may consume gas. Issuer restrictions can make transfers revert.
+Accounting tests use a local token double. The linked mainnet receipts validate one builder-controlled room using canonical Arc USDC; they do not cover every token restriction or failure condition, and no third-party audit is claimed. Settlers can race: only the first successful call earns the bounty. A losing transaction may consume gas. Issuer restrictions can make transfers revert.
 
 ## Evidence and submission
 
 The read-only `pin` and `evidence` tools use the fixed Arc mainnet RPC. They validate creation input/runtime, success status, contract addresses, room terms, due time, funding and the exact 6-decimal USDC transfer events. They never sign or take a key. Claims are populated only after both receipts pass.
 
-Arc Microgrants deadline: **14 October 2026, 23:59 ET**. This unsigned state does not meet mainnet eligibility. No DoraHacks submission was made. Public builder: [dmetagame](https://github.com/dmetagame).
+Arc Microgrants deadline: **14 October 2026, 23:59 ET**. The [four-sentence blurb](docs/HACKATHON_BLURB.md) was generated by the evidence tool only after both receipts passed. No DoraHacks submission was made. Public builder: [dmetagame](https://github.com/dmetagame).
 
 License: [MIT](LICENSE).

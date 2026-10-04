@@ -2,9 +2,13 @@
 
 ## Current status
 
-No available deployment key was found in the permitted process environment. No private key, seed phrase, secret file, or existing repository wallet configuration was accessed or created. Mainnet proof and a pinned address do not exist yet. All signatures below are for the operator's own browser wallet. Nothing is submitted to DoraHacks.
+Porter is deployed and pinned on Arc mainnet at [0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6](https://explorer.arc.io/address/0x3E92CbEe456dBcBdafaC5b2054347c36367d60d6). The [README](../README.md) and [mainnet proof](../evidence/mainnet-proof.json) link the validated opening and settlement of room #1. Sender, payee and caller were the same builder-controlled wallet; the sender also settled. Nothing is submitted to DoraHacks.
+
+The authorized 2026-10-04 run used only the ignored Porter-root .env in memory at signing boundaries, without copying or logging its key. Public transaction hashes and gas receipts are in [mainnet-run.json](../evidence/mainnet-run.json). The one-run script refuses to rerun when that journal or a pin exists. Do not redeploy or repeat this completed proof. Fresh visitors can use the existing pinned contract at https://porter-gilt.vercel.app.
 
 ## Deploy and pin
+
+This deployment procedure is retained as a reference. It is already complete for the address above; the pinned public app hides its deployment setup.
 
 1. Install dependencies and build: `npm ci`, `npm run build`. Use the production app with `npm run preview` or serve `dist/` on an operator-controlled host.
 2. Fund the browser wallet with a small amount of **real** Arc USDC. Include deployment and approval/open/settle gas plus the 0.11-USDC room. There is no mainnet faucet. The actual required gas is determined by the wallet/RPC; this runbook supplies no invented fee figure.
