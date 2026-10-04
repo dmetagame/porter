@@ -1,0 +1,58 @@
+[
+  {
+    "id": "intro",
+    "title": "One lock.\nTwo payments.",
+    "kicker": "Porter \u00b7 on Arc",
+    "text": "Porter is an early payment prototype on Arc. A sender locks a scheduled U S D C payout, plus a caller bounty.",
+    "capture": "overview"
+  },
+  {
+    "id": "fund",
+    "title": "Choose the terms.",
+    "kicker": "Unsigned interface walkthrough",
+    "text": "Choose the payee and the due time. The labeled defaults are ten cents for the payee and one cent for the caller. Approval is exactly eleven cents, followed by room funding.",
+    "capture": "funding"
+  },
+  {
+    "id": "due",
+    "title": "Anyone can settle\nonce it is due.",
+    "kicker": "The payment mechanism",
+    "text": "Once a room is due, any caller may settle it once. The caller estimates the fee and signs the transaction. Nothing executes automatically.",
+    "capture": "room"
+  },
+  {
+    "id": "split",
+    "title": "The recorded split.",
+    "kicker": "Existing Arc mainnet proof \u00b7 room 1",
+    "text": "This existing mainnet room locked eleven cents. Settlement paid ten cents to the payee and one cent to the caller, in the same transaction.",
+    "capture": "receipt"
+  },
+  {
+    "id": "receipts",
+    "title": "Two receipts.\nOne room.",
+    "kicker": "Inspectable evidence",
+    "text": "The public opening and settlement links let a judge inspect the real Arc transactions. They are the existing proof, not new payments made for this recording.",
+    "capture": "links"
+  },
+  {
+    "id": "gas",
+    "title": "Payout. Bounty. Gas.\nAll USDC.",
+    "kicker": "One currency on Arc",
+    "text": "On Arc, payout, bounty, and gas are all U S D C. This settlement used zero point zero zero one seven one nine four four U S D C for gas. Callers still need gas money up front.",
+    "capture": "receipt"
+  },
+  {
+    "id": "disclosure",
+    "title": "One builder wallet.",
+    "kicker": "Proof boundary",
+    "text": "The sender, payee, and caller were the same builder-controlled wallet. The sender also settled. This is not a keeper network, a profit guarantee, or evidence of independent use.",
+    "capture": "disclosure"
+  },
+  {
+    "id": "close",
+    "title": "Inspect Porter.",
+    "kicker": "Live product and public source",
+    "text": "Explore the live app and its public source. Review the pinned contract and both receipts. Porter is an early scheduled-payment prototype.",
+    "capture": "overview"
+  }
+]

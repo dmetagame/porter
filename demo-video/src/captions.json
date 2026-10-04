@@ -1,0 +1,198 @@
+[
+  {
+    "text": "Porter is an early payment prototype on Arc.",
+    "startMs": 502,
+    "endMs": 3143,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "A sender locks a scheduled USDC payout, plus a caller bounty.",
+    "startMs": 3957,
+    "endMs": 8042,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Choose the payee and the due time.",
+    "startMs": 10402,
+    "endMs": 12296,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "The labeled defaults are ten cents for the payee and one cent",
+    "startMs": 13122,
+    "endMs": 16195,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "for the caller.",
+    "startMs": 16215,
+    "endMs": 16988,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Approval is exactly eleven cents, followed by room funding.",
+    "startMs": 17813,
+    "endMs": 21447,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Once a room is due, any caller may settle it once.",
+    "startMs": 23602,
+    "endMs": 26759,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "The caller estimates the fee and signs the transaction.",
+    "startMs": 27585,
+    "endMs": 30652,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Nothing executes automatically.",
+    "startMs": 31477,
+    "endMs": 33654,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "This existing mainnet room locked eleven cents.",
+    "startMs": 35802,
+    "endMs": 38649,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Settlement paid ten cents to the payee and one cent to the",
+    "startMs": 39450,
+    "endMs": 42368,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "caller, in the same transaction.",
+    "startMs": 42388,
+    "endMs": 44282,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "The public opening and settlement links let a judge inspect",
+    "startMs": 46435,
+    "endMs": 49327,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the real Arc transactions.",
+    "startMs": 49347,
+    "endMs": 50893,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "They are the existing proof, not new payments made for this",
+    "startMs": 51720,
+    "endMs": 54857,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "recording.",
+    "startMs": 54877,
+    "endMs": 55521,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "On Arc, payout, bounty, and gas are all USDC.",
+    "startMs": 57668,
+    "endMs": 61147,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "This settlement used",
+    "startMs": 61974,
+    "endMs": 62895,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "0.00171944 USDC for gas.",
+    "startMs": 62915,
+    "endMs": 67180,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Callers still need gas money up front.",
+    "startMs": 67992,
+    "endMs": 70234,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "The sender, payee, and caller were the same builder-controlled",
+    "startMs": 72368,
+    "endMs": 75621,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "wallet.",
+    "startMs": 75641,
+    "endMs": 76157,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "The sender also settled.",
+    "startMs": 76983,
+    "endMs": 78594,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "This is not a keeper network, a profit guarantee, or evidence",
+    "startMs": 79406,
+    "endMs": 83097,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "of independent use.",
+    "startMs": 83117,
+    "endMs": 84341,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Explore the live app and its public source.",
+    "startMs": 86468,
+    "endMs": 89032,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Review the pinned contract and both receipts.",
+    "startMs": 89859,
+    "endMs": 92436,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Porter is an early scheduled-payment prototype.",
+    "startMs": 93248,
+    "endMs": 95980,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

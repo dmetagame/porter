@@ -1,0 +1,149 @@
+[
+  {
+    "text": "Explore",
+    "startMs": 101.541,
+    "endMs": 655.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 668.541,
+    "endMs": 784.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "live",
+    "startMs": 810.291,
+    "endMs": 1093.791,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "app",
+    "startMs": 1119.583,
+    "endMs": 1338.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "and",
+    "startMs": 1351.541,
+    "endMs": 1454.624,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "its",
+    "startMs": 1480.416,
+    "endMs": 1635.041,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "public",
+    "startMs": 1660.833,
+    "endMs": 2047.416,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "source",
+    "startMs": 2073.208,
+    "endMs": 2575.791,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Review",
+    "startMs": 3492.25,
+    "endMs": 3853.083,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 3878.875,
+    "endMs": 4007.75,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "pinned",
+    "startMs": 4033.5,
+    "endMs": 4304.125,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "contract",
+    "startMs": 4317.0,
+    "endMs": 4948.458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "and",
+    "startMs": 4961.333,
+    "endMs": 5077.333,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "both",
+    "startMs": 5103.083,
+    "endMs": 5360.833,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "receipts",
+    "startMs": 5373.708,
+    "endMs": 5979.374,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Porter",
+    "startMs": 6881.458,
+    "endMs": 7255.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "is",
+    "startMs": 7280.916,
+    "endMs": 7409.791,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "an",
+    "startMs": 7422.666,
+    "endMs": 7551.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "early",
+    "startMs": 7577.333,
+    "endMs": 7925.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "scheduled-payment",
+    "startMs": 7951.041,
+    "endMs": 8801.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "prototype",
+    "startMs": 8814.416,
+    "endMs": 9523.166,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

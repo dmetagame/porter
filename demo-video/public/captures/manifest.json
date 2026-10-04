@@ -1,0 +1,78 @@
+{
+  "capturedAt": "2026-10-04T17:40:45.501Z",
+  "sourceCommit": "d2a896cfa67327b0435726cd1980501692889fe7",
+  "url": "https://porter-gilt.vercel.app",
+  "walletInjected": false,
+  "transactionsSigned": false,
+  "rpcFixtures": false,
+  "inputsOnly": true,
+  "assets": [
+    {
+      "file": "overview.png",
+      "source": "https://porter-gilt.vercel.app/",
+      "kind": "Actual live browser capture",
+      "cssBounds": {
+        "x": 128,
+        "y": 88,
+        "width": 1184,
+        "height": 593.65625
+      }
+    },
+    {
+      "file": "receipt.png",
+      "source": "https://porter-gilt.vercel.app/",
+      "kind": "Actual live browser capture",
+      "cssBounds": {
+        "x": 700.390625,
+        "y": 144,
+        "width": 611.609375,
+        "height": 497.65625
+      }
+    },
+    {
+      "file": "contract.png",
+      "source": "https://porter-gilt.vercel.app/",
+      "kind": "Actual live browser capture",
+      "cssBounds": {
+        "x": 128,
+        "y": 681.65625,
+        "width": 1184,
+        "height": 103
+      }
+    },
+    {
+      "file": "funding.png",
+      "source": "https://porter-gilt.vercel.app/",
+      "kind": "Actual live browser capture",
+      "cssBounds": {
+        "x": 128,
+        "y": 165.34375,
+        "width": 518.390625,
+        "height": 734.46875
+      }
+    },
+    {
+      "file": "room.png",
+      "source": "https://porter-gilt.vercel.app/",
+      "kind": "Actual live browser capture",
+      "cssBounds": {
+        "x": 678.390625,
+        "y": 273.328125,
+        "width": 633.609375,
+        "height": 288.390625
+      }
+    },
+    {
+      "file": "open-explorer.png",
+      "source": "https://explorer.arc.io/tx/0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835",
+      "kind": "Actual public explorer capture",
+      "visibleExcerpt": "Chains\n|\nGas \n< $0.01\n\nBlockchain\n\nTokens\n\nCharts & stats\n\nAPI\n\nOther\n\n/\nLog in\nTransaction details\n0xEE...3f53\ncalled \n0x0ad73783\non \n0x3E...60d6\nDetails\nToken transfers\nUser operations\nInternal txns\nLogs\nState\nRaw trace\nTransaction hash\n0x18ab61c5dd1c812a7bdd1096ad096e6d9bfd48b1db9bc86329db331cc2353835\nStatus and method\nSuccess\n0x0ad73783\nBlock\n24211733\n|\n45278 Block confirmations\nTimestamp\n6h ago\n|\nLocal\nUTC\nUnix\nOct 04 2026 12:18:01 (+01:00 U"
+    },
+    {
+      "file": "settle-explorer.png",
+      "source": "https://explorer.arc.io/tx/0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1",
+      "kind": "Actual public explorer capture",
+      "visibleExcerpt": "Chains\n|\nGas \n< $0.01\n\nBlockchain\n\nTokens\n\nCharts & stats\n\nAPI\n\nOther\n\n/\nLog in\nTransaction details\n0xEE...3f53\ncalled \nsettle\non \n0x3E...60d6\nDetails\nToken transfers\nUser operations\nInternal txns\nLogs\nState\nRaw trace\nTransaction hash\n0x1e90ded621847c72c7ae6a45f87f6b5c73cbc4928609fde654df27071e5fb2a1\nStatus and method\nSuccess\nsettle\nBlock\n24211859\n|\n45179 Block confirmations\nTimestamp\n6h ago\n|\nLocal\nUTC\nUnix\nOct 04 2026 12:19:05 (+01:00 UTC)\n|\nCo"
+    }
+  ]
+}

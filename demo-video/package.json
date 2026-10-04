@@ -1,0 +1,41 @@
+{
+  "name": "demo-video",
+  "version": "1.0.0",
+  "description": "Editable Porter demo; actual interface captures and existing builder-controlled Arc proof.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmetagame/porter.git",
+    "directory": "demo-video"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@remotion/captions": "^4.0.532",
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "^4.0.532",
+    "@remotion/media": "^4.0.532",
+    "@remotion/transitions": "^4.0.532",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "capture": "node scripts/capture.mjs",
+    "narrate": "python3 scripts/narrate.py",
+    "render": "remotion render PorterDemo output/porter-demo.mp4 --codec=h264 --audio-codec=aac --pixel-format=yuv420p --crf=20 --concurrency=4",
+    "thumbnail": "remotion still PorterThumbnail output/thumbnail.png",
+    "timeline": "python3 scripts/timeline.py",
+    "verify": "python3 scripts/verify.py"
+  }
+}

@@ -1,0 +1,268 @@
+[
+  {
+    "text": "On",
+    "startMs": 101.541,
+    "endMs": 281.957,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Arc",
+    "startMs": 307.75,
+    "endMs": 552.583,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "payout",
+    "startMs": 668.541,
+    "endMs": 1068.041,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "bounty",
+    "startMs": 1248.458,
+    "endMs": 1686.583,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "and",
+    "startMs": 1867.0,
+    "endMs": 1995.875,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "gas",
+    "startMs": 2021.666,
+    "endMs": 2305.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "are",
+    "startMs": 2330.916,
+    "endMs": 2459.791,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "all",
+    "startMs": 2485.583,
+    "endMs": 2614.458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "U",
+    "startMs": 2640.208,
+    "endMs": 2807.749,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "S",
+    "startMs": 2820.625,
+    "endMs": 2949.5,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "D",
+    "startMs": 2962.375,
+    "endMs": 3104.125,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "C",
+    "startMs": 3129.916,
+    "endMs": 3490.749,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "This",
+    "startMs": 4407.208,
+    "endMs": 4613.374,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "settlement",
+    "startMs": 4639.166,
+    "endMs": 5077.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "used",
+    "startMs": 5103.083,
+    "endMs": 5322.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "zero",
+    "startMs": 5347.958,
+    "endMs": 5631.458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "point",
+    "startMs": 5657.208,
+    "endMs": 5902.041,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "zero",
+    "startMs": 5914.958,
+    "endMs": 6224.249,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "zero",
+    "startMs": 6250.0,
+    "endMs": 6559.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "one",
+    "startMs": 6585.041,
+    "endMs": 6791.207,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "seven",
+    "startMs": 6817.0,
+    "endMs": 7164.958,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "one",
+    "startMs": 7190.708,
+    "endMs": 7383.999,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "nine",
+    "startMs": 7409.791,
+    "endMs": 7628.874,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "four",
+    "startMs": 7654.625,
+    "endMs": 7899.458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "four",
+    "startMs": 7925.25,
+    "endMs": 8131.416,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "U",
+    "startMs": 8157.208,
+    "endMs": 8298.958,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "S",
+    "startMs": 8311.875,
+    "endMs": 8440.75,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "D",
+    "startMs": 8466.5,
+    "endMs": 8608.25,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "C",
+    "startMs": 8634.0,
+    "endMs": 8840.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "for",
+    "startMs": 8865.958,
+    "endMs": 9033.499,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "gas",
+    "startMs": 9059.291,
+    "endMs": 9523.207,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Callers",
+    "startMs": 10425.25,
+    "endMs": 10876.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "still",
+    "startMs": 10902.041,
+    "endMs": 11159.791,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "need",
+    "startMs": 11172.666,
+    "endMs": 11365.957,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "gas",
+    "startMs": 11391.75,
+    "endMs": 11688.125,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "money",
+    "startMs": 11701.041,
+    "endMs": 11984.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "up",
+    "startMs": 12010.291,
+    "endMs": 12126.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "front",
+    "startMs": 12152.041,
+    "endMs": 12577.291,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

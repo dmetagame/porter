@@ -1,0 +1,1 @@
+Choose the payee and the due time. The labeled defaults are ten cents for the payee and one cent for the caller. Approval is exactly eleven cents, followed by room funding.

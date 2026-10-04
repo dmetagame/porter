@@ -1,0 +1,1 @@
+The public opening and settlement links let a judge inspect the real Arc transactions. They are the existing proof, not new payments made for this recording.

@@ -1,0 +1,1 @@
+Once a room is due, any caller may settle it once. The caller estimates the fee and signs the transaction. Nothing executes automatically.

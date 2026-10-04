@@ -1,0 +1,198 @@
+[
+  {
+    "text": "The",
+    "startMs": 101.541,
+    "endMs": 243.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "sender",
+    "startMs": 269.083,
+    "endMs": 668.583,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "payee",
+    "startMs": 784.541,
+    "endMs": 1145.374,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "and",
+    "startMs": 1364.416,
+    "endMs": 1531.957,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "caller",
+    "startMs": 1557.75,
+    "endMs": 1944.333,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "were",
+    "startMs": 1970.083,
+    "endMs": 2086.083,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 2098.958,
+    "endMs": 2214.958,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "same",
+    "startMs": 2227.833,
+    "endMs": 2524.208,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "builder-controlled",
+    "startMs": 2550.0,
+    "endMs": 3348.958,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "wallet",
+    "startMs": 3374.75,
+    "endMs": 3800.0,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "The",
+    "startMs": 4716.5,
+    "endMs": 4871.125,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "sender",
+    "startMs": 4884.0,
+    "endMs": 5373.708,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "also",
+    "startMs": 5386.583,
+    "endMs": 5708.749,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "settled",
+    "startMs": 5734.541,
+    "endMs": 6237.124,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "This",
+    "startMs": 7139.166,
+    "endMs": 7371.124,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "is",
+    "startMs": 7396.916,
+    "endMs": 7512.916,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "not",
+    "startMs": 7538.666,
+    "endMs": 7719.082,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 7744.833,
+    "endMs": 7809.249,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "keeper",
+    "startMs": 7822.166,
+    "endMs": 8157.207,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "network",
+    "startMs": 8183.0,
+    "endMs": 8634.041,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 8827.333,
+    "endMs": 8891.749,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "profit",
+    "startMs": 8917.541,
+    "endMs": 9304.124,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "guarantee",
+    "startMs": 9329.916,
+    "endMs": 9948.457,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "or",
+    "startMs": 10193.291,
+    "endMs": 10386.582,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "evidence",
+    "startMs": 10412.375,
+    "endMs": 10824.75,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "of",
+    "startMs": 10850.5,
+    "endMs": 10953.583,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "independent",
+    "startMs": 10979.375,
+    "endMs": 11559.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "use",
+    "startMs": 11572.166,
+    "endMs": 11984.541,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

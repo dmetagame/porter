@@ -1,0 +1,1 @@
+On Arc, payout, bounty, and gas are all U S D C. This settlement used zero point zero zero one seven one nine four four U S D C for gas. Callers still need gas money up front.

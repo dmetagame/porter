@@ -1,0 +1,219 @@
+[
+  {
+    "text": "Choose",
+    "startMs": 101.541,
+    "endMs": 397.916,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 423.708,
+    "endMs": 552.583,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "payee",
+    "startMs": 578.333,
+    "endMs": 1016.458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "and",
+    "startMs": 1042.25,
+    "endMs": 1158.25,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 1184.0,
+    "endMs": 1300.0,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "due",
+    "startMs": 1325.791,
+    "endMs": 1493.332,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "time",
+    "startMs": 1506.166,
+    "endMs": 1905.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "The",
+    "startMs": 2822.166,
+    "endMs": 2963.916,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "labeled",
+    "startMs": 2989.708,
+    "endMs": 3298.999,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "defaults",
+    "startMs": 3324.75,
+    "endMs": 3801.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "are",
+    "startMs": 3827.333,
+    "endMs": 3930.416,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "ten",
+    "startMs": 3956.166,
+    "endMs": 4200.999,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cents",
+    "startMs": 4226.791,
+    "endMs": 4548.957,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "for",
+    "startMs": 4561.875,
+    "endMs": 4677.875,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 4690.708,
+    "endMs": 4806.708,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "payee",
+    "startMs": 4832.458,
+    "endMs": 5244.833,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "and",
+    "startMs": 5270.625,
+    "endMs": 5399.5,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "one",
+    "startMs": 5425.25,
+    "endMs": 5618.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cent",
+    "startMs": 5644.333,
+    "endMs": 5889.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "for",
+    "startMs": 5914.958,
+    "endMs": 6018.041,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 6030.916,
+    "endMs": 6121.124,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "caller",
+    "startMs": 6134.0,
+    "endMs": 6597.916,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Approval",
+    "startMs": 7512.875,
+    "endMs": 8067.0,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "is",
+    "startMs": 8079.916,
+    "endMs": 8208.791,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "exactly",
+    "startMs": 8234.541,
+    "endMs": 8788.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "eleven",
+    "startMs": 8814.416,
+    "endMs": 9188.124,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cents",
+    "startMs": 9213.916,
+    "endMs": 9639.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "followed",
+    "startMs": 9819.583,
+    "endMs": 10154.624,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "by",
+    "startMs": 10180.416,
+    "endMs": 10322.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "room",
+    "startMs": 10347.916,
+    "endMs": 10605.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "funding",
+    "startMs": 10618.541,
+    "endMs": 11056.666,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

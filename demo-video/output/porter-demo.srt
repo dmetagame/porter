@@ -1,0 +1,111 @@
+1
+00:00:00,502 --> 00:00:03,143
+Porter is an early payment prototype on Arc.
+
+2
+00:00:03,957 --> 00:00:08,042
+A sender locks a scheduled USDC payout, plus a caller bounty.
+
+3
+00:00:10,402 --> 00:00:12,296
+Choose the payee and the due time.
+
+4
+00:00:13,122 --> 00:00:16,195
+The labeled defaults are ten cents for the payee and one cent
+
+5
+00:00:16,215 --> 00:00:16,988
+for the caller.
+
+6
+00:00:17,813 --> 00:00:21,447
+Approval is exactly eleven cents, followed by room funding.
+
+7
+00:00:23,602 --> 00:00:26,759
+Once a room is due, any caller may settle it once.
+
+8
+00:00:27,585 --> 00:00:30,652
+The caller estimates the fee and signs the transaction.
+
+9
+00:00:31,477 --> 00:00:33,654
+Nothing executes automatically.
+
+10
+00:00:35,802 --> 00:00:38,649
+This existing mainnet room locked eleven cents.
+
+11
+00:00:39,450 --> 00:00:42,368
+Settlement paid ten cents to the payee and one cent to the
+
+12
+00:00:42,388 --> 00:00:44,282
+caller, in the same transaction.
+
+13
+00:00:46,435 --> 00:00:49,327
+The public opening and settlement links let a judge inspect
+
+14
+00:00:49,347 --> 00:00:50,893
+the real Arc transactions.
+
+15
+00:00:51,720 --> 00:00:54,857
+They are the existing proof, not new payments made for this
+
+16
+00:00:54,877 --> 00:00:55,521
+recording.
+
+17
+00:00:57,668 --> 00:01:01,147
+On Arc, payout, bounty, and gas are all USDC.
+
+18
+00:01:01,974 --> 00:01:02,895
+This settlement used
+
+19
+00:01:02,915 --> 00:01:07,180
+0.00171944 USDC for gas.
+
+20
+00:01:07,992 --> 00:01:10,234
+Callers still need gas money up front.
+
+21
+00:01:12,368 --> 00:01:15,621
+The sender, payee, and caller were the same builder-controlled
+
+22
+00:01:15,641 --> 00:01:16,157
+wallet.
+
+23
+00:01:16,983 --> 00:01:18,594
+The sender also settled.
+
+24
+00:01:19,406 --> 00:01:23,097
+This is not a keeper network, a profit guarantee, or evidence
+
+25
+00:01:23,117 --> 00:01:24,341
+of independent use.
+
+26
+00:01:26,468 --> 00:01:29,032
+Explore the live app and its public source.
+
+27
+00:01:29,859 --> 00:01:32,436
+Review the pinned contract and both receipts.
+
+28
+00:01:33,248 --> 00:01:35,980
+Porter is an early scheduled-payment prototype.

@@ -1,0 +1,163 @@
+[
+  {
+    "text": "Once",
+    "startMs": 101.541,
+    "endMs": 436.582,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 462.375,
+    "endMs": 526.791,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "room",
+    "startMs": 552.583,
+    "endMs": 797.416,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "is",
+    "startMs": 810.291,
+    "endMs": 939.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "due",
+    "startMs": 964.958,
+    "endMs": 1222.708,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "any",
+    "startMs": 1428.875,
+    "endMs": 1635.041,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "caller",
+    "startMs": 1660.833,
+    "endMs": 2021.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "may",
+    "startMs": 2047.416,
+    "endMs": 2214.957,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "settle",
+    "startMs": 2240.708,
+    "endMs": 2601.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "it",
+    "startMs": 2627.333,
+    "endMs": 2704.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "once",
+    "startMs": 2730.416,
+    "endMs": 3168.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "The",
+    "startMs": 4085.041,
+    "endMs": 4239.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "caller",
+    "startMs": 4265.458,
+    "endMs": 4639.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "estimates",
+    "startMs": 4652.041,
+    "endMs": 5128.832,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 5154.625,
+    "endMs": 5283.5,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "fee",
+    "startMs": 5309.291,
+    "endMs": 5605.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "and",
+    "startMs": 5618.541,
+    "endMs": 5747.416,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "signs",
+    "startMs": 5773.208,
+    "endMs": 6146.916,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 6172.666,
+    "endMs": 6262.874,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "transaction",
+    "startMs": 6275.791,
+    "endMs": 7061.874,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Nothing",
+    "startMs": 7976.791,
+    "endMs": 8453.582,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "executes",
+    "startMs": 8466.5,
+    "endMs": 9059.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "automatically",
+    "startMs": 9072.166,
+    "endMs": 10064.416,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

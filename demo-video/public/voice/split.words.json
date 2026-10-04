@@ -1,0 +1,170 @@
+[
+  {
+    "text": "This",
+    "startMs": 101.541,
+    "endMs": 333.499,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "existing",
+    "startMs": 359.291,
+    "endMs": 926.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "mainnet",
+    "startMs": 939.166,
+    "endMs": 1377.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "room",
+    "startMs": 1403.083,
+    "endMs": 1622.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "locked",
+    "startMs": 1647.958,
+    "endMs": 1957.249,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "eleven",
+    "startMs": 1983.0,
+    "endMs": 2330.958,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cents",
+    "startMs": 2356.708,
+    "endMs": 2859.291,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Settlement",
+    "startMs": 3750.0,
+    "endMs": 4291.25,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "paid",
+    "startMs": 4304.125,
+    "endMs": 4536.083,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "ten",
+    "startMs": 4561.875,
+    "endMs": 4793.833,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cents",
+    "startMs": 4819.583,
+    "endMs": 5128.874,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "to",
+    "startMs": 5154.625,
+    "endMs": 5244.833,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 5257.75,
+    "endMs": 5386.625,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "payee",
+    "startMs": 5399.5,
+    "endMs": 5773.208,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "and",
+    "startMs": 5798.958,
+    "endMs": 5927.833,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "one",
+    "startMs": 5953.625,
+    "endMs": 6146.916,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "cent",
+    "startMs": 6172.666,
+    "endMs": 6404.624,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "to",
+    "startMs": 6430.416,
+    "endMs": 6533.499,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 6559.291,
+    "endMs": 6662.374,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "caller",
+    "startMs": 6688.125,
+    "endMs": 7061.833,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "in",
+    "startMs": 7229.375,
+    "endMs": 7332.458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "the",
+    "startMs": 7345.375,
+    "endMs": 7435.583,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "same",
+    "startMs": 7448.458,
+    "endMs": 7706.208,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "transaction",
+    "startMs": 7731.958,
+    "endMs": 8492.249,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

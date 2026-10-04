@@ -1,0 +1,156 @@
+[
+  {
+    "text": "Porter",
+    "startMs": 101.541,
+    "endMs": 449.499,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "is",
+    "startMs": 475.25,
+    "endMs": 604.125,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "an",
+    "startMs": 629.916,
+    "endMs": 745.916,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "early",
+    "startMs": 771.666,
+    "endMs": 1106.707,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "payment",
+    "startMs": 1132.458,
+    "endMs": 1531.958,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "prototype",
+    "startMs": 1544.833,
+    "endMs": 2111.833,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "on",
+    "startMs": 2137.625,
+    "endMs": 2279.375,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "Arc.",
+    "startMs": 2305.166,
+    "endMs": 2653.124,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "A",
+    "startMs": 3556.708,
+    "endMs": 3698.458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "sender",
+    "startMs": 3724.208,
+    "endMs": 4059.249,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "locks",
+    "startMs": 4085.041,
+    "endMs": 4355.666,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 4381.458,
+    "endMs": 4445.874,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "scheduled",
+    "startMs": 4471.666,
+    "endMs": 4884.041,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "U",
+    "startMs": 4909.791,
+    "endMs": 5051.541,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "S",
+    "startMs": 5064.416,
+    "endMs": 5206.166,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "D",
+    "startMs": 5231.958,
+    "endMs": 5399.499,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "C",
+    "startMs": 5425.25,
+    "endMs": 5631.416,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "payout",
+    "startMs": 5657.208,
+    "endMs": 6082.458,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "plus",
+    "startMs": 6353.083,
+    "endMs": 6610.833,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 6636.583,
+    "endMs": 6713.916,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "caller",
+    "startMs": 6726.791,
+    "endMs": 7048.957,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "bounty",
+    "startMs": 7074.75,
+    "endMs": 7551.541,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

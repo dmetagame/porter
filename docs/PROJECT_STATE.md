@@ -3,8 +3,8 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-04
-Status: AUDIT_COMPLETE
-Active objective: Audit complete and audit checkpoint pushed/independently verified. No P0; one P1 verification-documentation finding fixed; no unresolved P0/P1. Publish this state receipt only, verify the current main ID and clean worktree, then stop. App/contract/proof/design unchanged; no manual redeploy, .env read or signing.
+Status: DEMO_VIDEO_IN_PROGRESS
+Active objective: Produce a narrated, captioned Porter demo video and editable sources using the saved MystiqueMide walkthrough style. Preserve app, wallet, contract, deployment and proof; do not read .env or any other project. The prior DoraHacks submission task is pending; no submission URL has been recorded or submission attempted in this video task.
 
 ## Workspace
 
@@ -117,3 +117,16 @@ Active objective: Audit complete and audit checkpoint pushed/independently verif
 - Audit cleanup: removed only task-created reproducible dist/out/cache/test-results and disposable /tmp audit scripts/fixture images after successful checks. Preserved dependencies, source, lockfile, historical proof/images, new audit evidence, Vercel link and unread .env.
 
 - 2026-10-04T15:55:52.889987Z audit publication receipt: 27edb6578d0e7ccf52648e99a070ecbdafe3e77e pushed to Porter main and independently matched by git ls-remote. Worktree clean and main aligned with origin/main. Frozen contract, pin, receipts, proof, blurb, runbook and src/ comparison passed again after commit. All audit deliverables are backed up on public main. This state-only receipt follows that verified checkpoint; resolve its own commit with git rev-parse HEAD and verify public main before handoff.
+
+## Demo video checkpoint — 2026-10-04T17:34:40.505557Z
+
+- Reconciled workspace: /home/rouma/porter, main d2a896cfa67327b0435726cd1980501692889fe7; clean at start, sole remote Porter and existing GitHub authentication verified. Prior audit receipt is already pushed, so its pending-push handoff is historical.
+- Current scope: isolated demo-video/ editable Remotion project, narrated 1080p/30 H.264/AAC MP4, captions/transcript, thumbnail and source/asset provenance; living state only outside that folder. No app or evidence edits, no manual Vercel deployment, no signatures, no .env read, no other repo access.
+- Named MystiqueMide package not found in installed skill contents or UI Skills registry; user asked asynchronously for exact link. Apply the saved reference style from the user-supplied handoff: framed walkthrough, deliberate cuts, concise narration, readable timed captions, inspectable existing proof, closing product/source links. Remotion skill read at /home/rouma/.agents/skills/remotion-best-practices/SKILL.md and creation/markup/caption/render references. No claim that the original video was inspected this turn.
+- Planned captures: actual live app, form inputs without wallet/signing, settled room #1 and existing proof links. Show exact same-wallet disclosure and gas; any editorial explanation is labeled and never presented as a newly executed payment.
+
+- 2026-10-04T17:38:08.772316Z user approved proceeding with the saved MystiqueMide reference/style brief. No external skill package is required. Key-free Edge TTS is installed; narration uses public script only, with no .env read or credentials.
+
+- Demo production checkpoint: isolated Remotion 4.0.532 project scaffolded, actual live app/form/settled-room/receipt and both public Arc explorer pages captured without a wallet, signing or RPC fixtures. Eight narrated scenes generated using key-free synthetic voice; word-boundary timings produce 26 caption cues across 2980 frames (99.333 seconds at 30 fps). Editable composition typecheck passed. Render/encoded-frame/audio/download verification remains.
+
+- 2026-10-04T18:00:11.892678Z demo source checkpoint ready: eight separate Remotion scenes, actual-capture manifest, synthetic narration and exact word timings, 28 punctuated subtitles, transcript/links, thumbnail and reproduction/verification scripts. Preview frames inspected for form crop, proof figures, explorer evidence, disclosure and closing links; typecheck passed. Removed unused scaffold ESLint toolchain with reproduced dependency advisories; isolated install now reports zero vulnerabilities. Full 2980-frame H.264/AAC render is running; encode/decode/public-download checks pending. Stage only complete source/assets/docs at this checkpoint, not an unfinished MP4.

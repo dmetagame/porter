@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Disposable preview/check frames; delivered video/thumbnail/subtitles are tracked.
+output/check-*.png
+output/decoded-*.png
+output/contact-sheet.png
