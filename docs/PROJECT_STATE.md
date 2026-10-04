@@ -3,8 +3,8 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-04
-Status: FRONTEND_REDESIGN_PUBLICLY_VERIFIED
-Active objective: Redesign, build, mock checks, contrast and fresh public verification are complete. Push only the scoped frontend/design/test evidence to main and verify publication, then stop. No .env read, key request, signing, contract deployment, other repository access or DoraHacks submission is authorized.
+Status: FRONTEND_REDESIGN_PUBLISHED
+Active objective: Redesign, build, mock checks, contrast and fresh public verification are complete. Source checkpoint is pushed and verified. Push only this publication receipt to Porter main, verify it, then stop. No .env read, key request, signing, contract deployment, other repository access or DoraHacks submission is authorized.
 
 ## Workspace
 
@@ -96,3 +96,7 @@ Active objective: Redesign, build, mock checks, contrast and fresh public verifi
 - Final refinement: a very long typed payout exposed mobile total overflow. The total now wraps within bounded grid columns without rounding/truncation. Rebuilt and all six browser tests pass, including the added long-amount check; frozen hashes still match.
 
 - Final public verification 2026-10-04T15:13:20.122Z: existing Porter project deployment dpl_EGu8tYDKEmo6fKKqPj3iYj9uvp8B is Ready. HTTPS 200 across light/dark and 1440/390/320px; exact pinned address, open/settle URLs, 0.11/0.10/0.01 split and 0.00171944 gas preserved; long typed payout wraps. No injected wallet, signing, mocks, page errors or horizontal overflow on public checks.
+
+- Redesign source checkpoint 4d93911179c665386e3b4802db9bb401c3ba186d pushed to Porter main and independently verified with git ls-remote; tracked worktree was clean after push. Git-triggered production https://porter-q1iudcaa2-dmetagames-projects.vercel.app is Ready. Fresh stable URL checked again at 2026-10-04T15:25:21.087Z with the new heading, frozen proof links/gas and no error/overflow. This receipt-only handoff follows that checkpoint; resolve its own ID with git rev-parse HEAD and compare public main before ending.
+
+- Cleanup: task production preview stopped (exit 130); removed reproducible dist/, out/, cache/, .vercel/output/ and test-results/. Source, lockfile, all verified/labeled images, frozen proof, Vercel link and the unread .env are preserved. No other repository was read or written. No DoraHacks submission. Final action: commit/push this handoff and redesign-verification.json only, verify main, then stop.

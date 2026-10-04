@@ -240,7 +240,14 @@
         "pageErrors": [],
         "horizontalOverflow": false
       }
-    ]
+    ],
+    "sourceCheckpoint": "4d93911179c665386e3b4802db9bb401c3ba186d",
+    "sourcePushVerified": true,
+    "gitTriggeredProduction": {
+      "url": "https://porter-q1iudcaa2-dmetagames-projects.vercel.app",
+      "status": "Ready",
+      "freshStableUrlCheckedAt": "2026-10-04T15:25:21.087Z"
+    }
   },
   "finalLongAmountRefinement": "Production rebuilt; all 6 browser tests pass again. Frozen files and wallet handlers still byte-identical."
 }
