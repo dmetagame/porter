@@ -59,5 +59,14 @@
       "screenshot": "evidence/browser/mainnet-320.png"
     }
   ],
-  "note": "Real Arc proof established by pin/evidence tools. Fresh production browsers used no wallet, signatures or RPC fixtures."
+  "note": "Real Arc proof established by pin/evidence tools. Fresh production browsers used no wallet, signatures or RPC fixtures.",
+  "publication": {
+    "gitCommit": "80077e08f0a2d08615ac9738c90ed810917ceb8b",
+    "gitMainVerified": true,
+    "gitTriggeredProductionUrl": "https://porter-q0poroi5y-dmetagames-projects.vercel.app",
+    "deploymentStatus": "Ready",
+    "freshStableUrlRecheckedAt": "2026-10-04T11:40:11.086Z",
+    "httpsStatus": 200,
+    "addressAndTransactionLinksMatch": true
+  }
 }

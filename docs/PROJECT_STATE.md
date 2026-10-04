@@ -4,7 +4,7 @@
 
 Last updated: 2026-10-04
 Status: VERIFIED_MAINNET_PROOF_PUBLISHED
-Active objective: Mainnet proof and the existing public app are verified. Push the scoped Porter checkpoint and publication receipt to main, then stop. No additional signing or DoraHacks submission is authorized.
+Active objective: Mainnet proof, source push and existing public app are verified. Push only this publication-receipt handoff to Porter main, verify it, then stop. No additional signing or DoraHacks submission is authorized.
 
 ## Workspace
 
@@ -12,6 +12,7 @@ Active objective: Mainnet proof and the existing public app are verified. Push t
 - Worktree: /home/rouma/porter; branch main.
 - Starting local/public main: 3790bb00a3cac23a5e08e79ebf3f4d55ffc630d0; worktree initially clean. State's previous hosting receipt is reconciled with that observed commit.
 - Earlier implementation: 6bc946c211564991623b7075bd401c7533dad8aa; hosting checkpoint: 522111286e42e468b4fdc8522443ed62a9131897.
+- Mainnet proof checkpoint: 80077e08f0a2d08615ac9738c90ed810917ceb8b. Push to origin/main succeeded and git ls-remote independently confirmed the public main ID. Worktree clean after that checkpoint. This publication-receipt-only handoff follows it; resolve its own ID with git rev-parse HEAD and compare origin/main before ending.
 - Existing Vercel project only: dmetagames-projects/porter, prj_9DlI1gjs2YDzbfg1nNBZKm5eTj2r; public operator app https://porter-gilt.vercel.app. CLI authenticated as dmetagame.
 - No other repository was read, written, fetched, branched, committed or pushed during this mainnet session. Do not access any other repository to perform boundary checks.
 
@@ -48,19 +49,21 @@ Active objective: Mainnet proof and the existing public app are verified. Push t
 - Post-proof npm run build and vercel build --prod both passed. Existing project ID checked; 38 prebuilt upload files contain no .env filename or signing-variable marker. vercel deploy --prebuilt --prod completed Ready as dpl_ChZzJGJLZHjagpxQc7574t6kjLJR, aliased to the same https://porter-gilt.vercel.app.
 - 2026-10-04T11:34Z fresh public Playwright loads at 1440/390/320px returned HTTPS 200, showed the exact pinned address/open/settle links matching README and mainnet-proof.json, had no wallet injected, page errors, alert state, RPC fixtures or horizontal overflow. Real settled room #1 is visible. evidence/hosting.json and evidence/browser/mainnet-*.png record current production; mobile screenshot visually inspected.
 - Pre-commit .env ignore/untracked checks passed again; sole push remote remains dmetagame/porter. App/contract source and generated artifact remain unchanged. No other repository was accessed.
+- Post-push production https://porter-q0poroi5y-dmetagames-projects.vercel.app is Ready (8s build). At 2026-10-04T11:40Z a fresh browser rechecked the stable https://porter-gilt.vercel.app: HTTPS 200, exact pinned contract/open/settle links, no alert state. evidence/hosting.json records the verified source checkpoint and subsequent production build.
 
 ## Risks And Next Actions
 
 - This proves one builder-controlled scheduled payment. Broader token restrictions and failure modes are not a mainnet audit. Room funding has no cancellation/refund/admin path; callers may race and lose gas.
 - Rebuild/republication and fresh production checks are complete. Do not create another project/domain/account or sign more transactions.
-- Commit/push the validated evidence, generated blurb, README/runbook, one-run script, current hosting checks/screenshots and this handoff only to Porter main. Verify public main and final production alias after the Git-triggered build.
+- Proof checkpoint is pushed and verified; final production alias was rechecked after its Git-triggered build. Commit/push only this publication-receipt update and evidence/hosting.json to Porter main, verify that handoff commit, then stop.
 - Before commit, repeat .env ignore/status/tracked checks. Stage explicit paths, never .env or .vercel/ environment files. Stop if a secret safeguard fails.
 
 ## Session Handoff
 
-- Mainnet signing, validators and production verification complete; source checkpoint/push verification remains. No additional mainnet transaction is needed.
+- Mainnet signing, validators, source checkpoint/push and production verification complete. No additional mainnet transaction is needed. No DoraHacks submission was made.
 - Preserve all mainnet receipts, generated proof/blurb, source artifact, lockfile and .env. Only reproducible task-created build caches/output may be cleaned after publishing; retain ignored nonsecret Vercel project link settings.
 - evidence/hosting.json now records the confirmed mainnet proof in fresh production browsers. Historical local/unsigned screenshots remain explicitly historical; only new mainnet-*.png screenshots show current real Arc proof.
+- After successful publishing, removed only task-created reproducible dist/, out/, cache/, .vercel/output/ and generated ignored .vercel/.env.production.local. Preserved the user's root .env untouched, nonsecret Vercel project link, source/artifact, dependencies/lockfile, all receipts, blurb and screenshots. Final commit guards must still exclude .env and .vercel/.
 
 ## Change Log
 
@@ -75,3 +78,4 @@ Active objective: Mainnet proof and the existing public app are verified. Push t
 
 | 2026-10-04T11:20Z | Codex | Real mainnet proof validated | Deploy/approve/open/settle succeeded; pin/runtime and evidence tools accepted all receipts; sender/payee/caller same wallet; generated confirmed proof/blurb; publication pending |
 | 2026-10-04T11:34Z | Codex | Mainnet proof publicly verified | Existing Porter project redeployed; HTTPS 200 at 1440/390/320px; address and open/settle links match README and collector proof; settled room #1 visible; .env excluded from upload and source scope |
+| 2026-10-04T11:40Z | Codex | Proof publication receipt verified | 80077e0 pushed and independently verified on Porter public main; Git-triggered production Ready; stable public app rechecked against exact proof links; disposable output cleaned, root .env preserved |
