@@ -2,11 +2,13 @@
 
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
-Last updated: 2026-10-04
-Status: DEMO_VIDEO_DELIVERED
-Active objective: Completed the narrated, captioned Porter demo using the approved saved MystiqueMide walkthrough style; verified public video and supporting downloads. App, wallet, contract, deployment and proof are unchanged; .env and other projects were not read. The prior DoraHacks submission task is pending; no submission URL has been recorded or submission attempted in this video task.
+Last updated: 2026-10-05
+Status: DORAHACKS_SUBMISSION_BLOCKED_ACCESS
+Active objective: Submit the existing Porter project once to Arc Microgrants; blocked before the form by DoraHacks human verification and lack of an accessible authenticated browser session. User renewed submission authorization on 2026-10-05. No registration, form fill or submission occurred; duplicate status could not yet be checked. Operator must complete verification and provide an accessible logged-in session before resuming. Preserve app, wallet, contract, evidence and blurb; do not read .env or any other repo, sign, deploy or create an account. Save only an accepted public URL in docs/SUBMISSION.md; none exists yet.
 
 ## Workspace
+
+- Submission session reconciled 2026-10-05: /home/rouma/porter, main 603ca97814c3cc6b9d0172c5c9afe7a729b110f1; clean initial worktree, local/upstream/public main agree, sole origin dmetagame/porter, existing GitHub authentication dmetagame verified. Previous video receipt is already public; earlier no-submission scope has been superseded by the current explicit submission request.
 
 - Current video session: /home/rouma/porter, main; public video checkpoint 31ec333d30f0463290be6a7c3dd66dfb6a025ce9 verified against origin/main. Baseline d2a896cfa67327b0435726cd1980501692889fe7; only demo-video/ and this handoff changed. Earlier audit/redesign/deployment sections are historical, not current authorization.
 
@@ -74,6 +76,8 @@ Active objective: Completed the narrated, captioned Porter demo using the approv
 - Never stage .env, .vercel/ files, frozen mainnet records, contract sources or unrelated files. No other repository is accessible for this task.
 
 ## Session Handoff
+
+- Current submission handoff supersedes the completed video scope below. Blocked by human verification; no login/duplicate/form check completed. Operator must establish an accessible already-authenticated DoraHacks session. On resume, use only approved Porter facts and the delivered demo; check login and existing submission before creating anything, register only if required, leave unknown optional fields empty and stop at unknown required fields. No key/environment access, app changes, signing or redeployment. No submission has been accepted; do not invent a URL or create docs/SUBMISSION.md without it.
 
 - Current demo handoff supersedes the old presentation scope below: editable sources, actual read-only captures, narration, captions, thumbnail, final MP4 and verification live in demo-video/. Never read .env or any other repo; no signing, app changes or manual Vercel deployment. Media/browser/public-download verification passed. Final action: push this delivery-receipt-only checkpoint, verify local/upstream/public main and stop. DoraHacks submission remains pending; this video task did not submit the project.
 
@@ -151,3 +155,9 @@ Active objective: Completed the narrated, captioned Porter demo using the approv
 - Protected app, wallet, contracts, evidence, pinned address, receipt hashes, root dependencies/runbook and four-sentence blurb remain byte-identical to d2a896c. No new transaction, app change, manual Vercel deployment, other repo access or DoraHacks submission. Same builder sender/payee/caller and exact 0.10/0.01 payout/bounty and 0.00171944 gas are preserved.
 - Cleanup: stopped task media servers and removed only generated check/decoded frames, contact sheet, intermediate full-range MP4 and downloaded verification copies. Preserved the final MP4, thumbnail, subtitles, transcript, all editable sources/assets/lockfiles/dependencies, historical evidence, Vercel link and unread .env.
 - Next: user reviews the delivered video. No implementation or submission step remains authorized by this video request.
+
+## Submission checkpoint — 2026-10-05T09:19:35Z
+
+- User explicitly authorized submitting/filling the existing project on DoraHacks. Approved description read from docs/HACKATHON_BLURB.md without edits; no re-audit. Local/public main 603ca97 verified. Browser skill loaded from the installed skill stub via a temporary npx tools cache because agent-browser is not on PATH; existing Chrome processes are running. Next connect to the existing browser, check DoraHacks login, then check for a duplicate Porter build/submission. Do not request or type credentials.
+
+- Access blocker observed 2026-10-05T09:57:22Z: browser auto-connect failed with "No running Chrome instance found" despite unrelated automation sessions being present; those unrelated sessions were not opened or changed. Dedicated porter-submission browser opened only the supplied DoraHacks URL and displayed "Human Verification" / "Let's confirm you are human" / "Begin" instead of the hackathon or submission page. No verification challenge was attempted or bypassed. Public web fetch also returned 405. No registration, account creation, credentials, uploads, form changes or submission; existing Porter submission status remains unknown. Only this state file changed. Stop pending operator verification/login in an accessible browser; never assume the operator's normal browser is logged out merely because automation cannot connect. Save this state-only checkpoint to Porter main and verify the push; resolve its final ID with git rev-parse HEAD, without a self-referential follow-up commit.
