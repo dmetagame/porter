@@ -3,12 +3,12 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-05
-Status: LOGO_PUBLICATION_IN_PROGRESS_MANUAL_SUBMISSION
-Active objective: Provide a working public HTTPS download for the existing Porter logo. The operator chose to fill DoraHacks manually after the access blocker; do not resume automated submission. PNG/SVG exports are already in /home/rouma/Downloads, but local-file links do not provide public web access. Publish only those existing exports in this repository plus this handoff. Preserve app, wallet, contract, evidence and blurb; do not read .env or any other repo, sign or deploy. No accepted submission URL has been provided.
+Status: LOGO_DELIVERED_MANUAL_SUBMISSION
+Active objective: Completed public HTTPS logo downloads and verified browser display. The operator chose to fill DoraHacks manually after the access blocker; do not resume automated submission. Existing PNG/SVG exports remain in Downloads and are published in media/ with download instructions. App, wallet, contract, evidence and blurb are unchanged; .env and other repositories were not read. No accepted submission URL has been provided.
 
 ## Workspace
 
-- Logo publication session: /home/rouma/porter, main 071da89690997b53a6a2a114d56d1e3e2225e67c; clean initial worktree, local/upstream/public main agree, sole origin Porter and existing GitHub authentication verified. Existing logo exports use the app's original inline SVG geometry and light-theme colors; PNG is 1024x1024. No redesign is authorized.
+- Logo publication session: /home/rouma/porter, main; logo assets checkpoint 788d05c335478c31fa644f6d59fa5646b786f716 pushed and verified against public main. Baseline 071da89690997b53a6a2a114d56d1e3e2225e67c was clean/aligned; sole origin Porter and existing GitHub authentication verified. Existing logo exports use the app's original inline SVG geometry and light-theme colors; PNG is 1024x1024. No redesign is authorized. This final state-only receipt follows that checkpoint; resolve its own commit ID with git rev-parse HEAD and verify public main before handoff.
 
 - Submission session reconciled 2026-10-05: /home/rouma/porter, main 603ca97814c3cc6b9d0172c5c9afe7a729b110f1; clean initial worktree, local/upstream/public main agree, sole origin dmetagame/porter, existing GitHub authentication dmetagame verified. Previous video receipt is already public; earlier no-submission scope has been superseded by the current explicit submission request.
 
@@ -79,7 +79,7 @@ Active objective: Provide a working public HTTPS download for the existing Porte
 
 ## Session Handoff
 
-- Latest scope supersedes automated submission: operator will fill DoraHacks manually. Publish the existing logo PNG/SVG as static media files, verify the public HTTPS downloads match their local bytes, then stop. No app, contract, proof, wallet, blurb or Vercel configuration changes. Never invent an accepted submission URL.
+- Latest scope supersedes automated submission: operator will fill DoraHacks manually. Existing logo PNG/SVG are published and public HTTPS downloads match local bytes; fresh-browser PNG display passes at 1024x1024. Final action: push this receipt-only handoff, verify clean worktree and matching local/upstream/public main, then stop. No app, contract, proof, wallet, blurb or Vercel configuration changes. Never invent an accepted submission URL.
 
 - Current submission handoff supersedes the completed video scope below. Blocked by human verification; no login/duplicate/form check completed. Operator must establish an accessible already-authenticated DoraHacks session. On resume, use only approved Porter facts and the delivered demo; check login and existing submission before creating anything, register only if required, leave unknown optional fields empty and stop at unknown required fields. No key/environment access, app changes, signing or redeployment. No submission has been accepted; do not invent a URL or create docs/SUBMISSION.md without it.
 
@@ -170,3 +170,5 @@ Active objective: Provide a working public HTTPS download for the existing Porte
 
 - Operator chose manual DoraHacks submission and requested the existing logo. Exported the exact src/main.tsx mark and src/styles.css light colors into /home/rouma/Downloads/Porter-logo.png and Porter-logo.svg; actual PNG visually inspected, 1024x1024. No source files changed during that export.
 - Local-file links did not provide browser access, so the current task adds only media/porter-logo.png, media/porter-logo.svg and media/README.md plus this handoff. Export copies match Downloads byte-for-byte; PNG format, dimensions and integrity checked. PNG SHA-256 062ee3101553054d66fa11f71c0ae4c1845d90744c500ed612ad8e218bd85ff1; SVG SHA-256 e3f56effcd7bddbb65c0be3acf395cdb8b71bb0035d6f5cb5d0d972d1f33eda7. Next push to Porter main and verify both raw.githubusercontent.com downloads over HTTPS. No app changes, signatures, proof edits, manual redeployment, other repo access or submission.
+
+- 2026-10-05T10:39:23Z logo publication verified: 788d05c pushed only to Porter main and independently matched via git ls-remote. https://raw.githubusercontent.com/dmetagame/porter/main/media/porter-logo.png returned HTTP 200, image/png, 16,431 bytes; SVG counterpart returned HTTP 200, image/svg+xml, 486 bytes. Both downloads match original bytes/hashes. Fresh Chromium load returned 200 and displayed a complete 1024x1024 PNG. Relevant app/contract/proof/runbook/blurb/dependency/hosting diff stayed empty. Temporary downloaded verification copies removed; local Downloads originals and all source/proof files preserved. Next operator opens the public PNG and uses Save image as, then manually fills DoraHacks. No automated submission is pending.
