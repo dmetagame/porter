@@ -3,10 +3,12 @@
 > Living handoff for Codex sessions. Never record secrets or raw credential-bearing values.
 
 Last updated: 2026-10-05
-Status: DORAHACKS_SUBMISSION_BLOCKED_ACCESS
-Active objective: Submit the existing Porter project once to Arc Microgrants; blocked before the form by DoraHacks human verification and lack of an accessible authenticated browser session. User renewed submission authorization on 2026-10-05. No registration, form fill or submission occurred; duplicate status could not yet be checked. Operator must complete verification and provide an accessible logged-in session before resuming. Preserve app, wallet, contract, evidence and blurb; do not read .env or any other repo, sign, deploy or create an account. Save only an accepted public URL in docs/SUBMISSION.md; none exists yet.
+Status: LOGO_PUBLICATION_IN_PROGRESS_MANUAL_SUBMISSION
+Active objective: Provide a working public HTTPS download for the existing Porter logo. The operator chose to fill DoraHacks manually after the access blocker; do not resume automated submission. PNG/SVG exports are already in /home/rouma/Downloads, but local-file links do not provide public web access. Publish only those existing exports in this repository plus this handoff. Preserve app, wallet, contract, evidence and blurb; do not read .env or any other repo, sign or deploy. No accepted submission URL has been provided.
 
 ## Workspace
+
+- Logo publication session: /home/rouma/porter, main 071da89690997b53a6a2a114d56d1e3e2225e67c; clean initial worktree, local/upstream/public main agree, sole origin Porter and existing GitHub authentication verified. Existing logo exports use the app's original inline SVG geometry and light-theme colors; PNG is 1024x1024. No redesign is authorized.
 
 - Submission session reconciled 2026-10-05: /home/rouma/porter, main 603ca97814c3cc6b9d0172c5c9afe7a729b110f1; clean initial worktree, local/upstream/public main agree, sole origin dmetagame/porter, existing GitHub authentication dmetagame verified. Previous video receipt is already public; earlier no-submission scope has been superseded by the current explicit submission request.
 
@@ -76,6 +78,8 @@ Active objective: Submit the existing Porter project once to Arc Microgrants; bl
 - Never stage .env, .vercel/ files, frozen mainnet records, contract sources or unrelated files. No other repository is accessible for this task.
 
 ## Session Handoff
+
+- Latest scope supersedes automated submission: operator will fill DoraHacks manually. Publish the existing logo PNG/SVG as static media files, verify the public HTTPS downloads match their local bytes, then stop. No app, contract, proof, wallet, blurb or Vercel configuration changes. Never invent an accepted submission URL.
 
 - Current submission handoff supersedes the completed video scope below. Blocked by human verification; no login/duplicate/form check completed. Operator must establish an accessible already-authenticated DoraHacks session. On resume, use only approved Porter facts and the delivered demo; check login and existing submission before creating anything, register only if required, leave unknown optional fields empty and stop at unknown required fields. No key/environment access, app changes, signing or redeployment. No submission has been accepted; do not invent a URL or create docs/SUBMISSION.md without it.
 
@@ -161,3 +165,8 @@ Active objective: Submit the existing Porter project once to Arc Microgrants; bl
 - User explicitly authorized submitting/filling the existing project on DoraHacks. Approved description read from docs/HACKATHON_BLURB.md without edits; no re-audit. Local/public main 603ca97 verified. Browser skill loaded from the installed skill stub via a temporary npx tools cache because agent-browser is not on PATH; existing Chrome processes are running. Next connect to the existing browser, check DoraHacks login, then check for a duplicate Porter build/submission. Do not request or type credentials.
 
 - Access blocker observed 2026-10-05T09:57:22Z: browser auto-connect failed with "No running Chrome instance found" despite unrelated automation sessions being present; those unrelated sessions were not opened or changed. Dedicated porter-submission browser opened only the supplied DoraHacks URL and displayed "Human Verification" / "Let's confirm you are human" / "Begin" instead of the hackathon or submission page. No verification challenge was attempted or bypassed. Public web fetch also returned 405. No registration, account creation, credentials, uploads, form changes or submission; existing Porter submission status remains unknown. Only this state file changed. Stop pending operator verification/login in an accessible browser; never assume the operator's normal browser is logged out merely because automation cannot connect. Save this state-only checkpoint to Porter main and verify the push; resolve its final ID with git rev-parse HEAD, without a self-referential follow-up commit.
+
+## Logo link checkpoint — 2026-10-05T10:34:25Z
+
+- Operator chose manual DoraHacks submission and requested the existing logo. Exported the exact src/main.tsx mark and src/styles.css light colors into /home/rouma/Downloads/Porter-logo.png and Porter-logo.svg; actual PNG visually inspected, 1024x1024. No source files changed during that export.
+- Local-file links did not provide browser access, so the current task adds only media/porter-logo.png, media/porter-logo.svg and media/README.md plus this handoff. Export copies match Downloads byte-for-byte; PNG format, dimensions and integrity checked. PNG SHA-256 062ee3101553054d66fa11f71c0ae4c1845d90744c500ed612ad8e218bd85ff1; SVG SHA-256 e3f56effcd7bddbb65c0be3acf395cdb8b71bb0035d6f5cb5d0d972d1f33eda7. Next push to Porter main and verify both raw.githubusercontent.com downloads over HTTPS. No app changes, signatures, proof edits, manual redeployment, other repo access or submission.
